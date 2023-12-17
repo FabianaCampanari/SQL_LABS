@@ -1,4 +1,4 @@
-# 🗄️💻 SQL LABS - Creation of Databases on SQL Server.
+# 🗄️ SQL LABS - Creation of Databases on SQL Server.
 
 The course SQL - Creating Database Systems is aimed at developers and those familiar with programming logic who intend to create and manage a database system in SQL Server.
 
