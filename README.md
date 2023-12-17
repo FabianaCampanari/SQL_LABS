@@ -7,7 +7,7 @@ During the course, Professor Hélio de Almeida teaches advanced techniques for d
 The course covers a variety of topics, including:
 
 
-•	SSMS - SQL Server Management Studio Interface: Connecting to a server, main panels, configuring the editor environment.
+•	**SSMS - SQL Server Management Studio Interface:** Connecting to a server, main panels, configuring the editor environment.
 #
 
 
