@@ -4,6 +4,8 @@ The course SQL - Creating Database Systems is aimed at developers and those fami
 
 During the course, Professor Hélio de Almeida teaches advanced techniques for database system structure, as well as the mechanism and structure of SQL and other essential points to use the various features of SQL Server and its data query and manipulation structure
 
+The course covers a variety of topics, including:
+
 #
 
 
