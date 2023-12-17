@@ -5,4 +5,4 @@ The course SQL - Creating Database Systems is aimed at developers and those fami
 #
 
 
-###### <p align="center"> [Copyright 2024 Fabiana Campanari. Code released under the MIT license.]
+###### <p align="center"> [Copyright 2024 Fabiana Campanari. Code released under the Apache 2.0 license.]
