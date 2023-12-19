@@ -112,5 +112,7 @@ updates:
     schedule:
       interval: "weekly"
       day: "sunday"
-      time: "16:00"
+      time: "16:00
+
+      
       
