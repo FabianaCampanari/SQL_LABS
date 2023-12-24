@@ -27,6 +27,8 @@ CREATE TABLE tblModelos
 	Constraint UQ_tblModelos_nomeModelo
 	Unique (nomeModelo)
 
+	
+
 );
 
 Exec sp_help tblModelos;
