@@ -26,9 +26,6 @@ CREATE TABLE tblModelos
 	nomeModelo		nchar(30)		not null
 	Constraint UQ_tblModelos_nomeModelo
 	Unique (nomeModelo)
-
-	
-
 );
 
 Exec sp_help tblModelos;
