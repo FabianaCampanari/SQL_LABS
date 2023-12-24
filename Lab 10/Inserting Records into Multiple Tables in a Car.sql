@@ -33,3 +33,5 @@ INSERT INTO tblEstoque
 (idModelo, dataEntrada, precoEstoque)
 VALUES
 (1,'2017-01-05',2000);
+
+
