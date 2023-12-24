@@ -1,7 +1,7 @@
 /*
 |-----------------------------------------------------------------------------------------
-| Manter os arquivos no diretÛrio C:\Databases
-| Dar controle total na permiss„o de pasta do windows
+| Manter os arquivos no diret√≥rio C:\Databases
+| Dar controle total na permiss√£o de pasta do windows
 | Executar o script inteiro							   
 |-----------------------------------------------------------------------------------------
 */
@@ -33,6 +33,7 @@
 			@FILENAME2 = 'C:\DATABASES\Consorcio_log.ldf';
 ------------------------------------------------------------------------------------------------	
 		PRINT 'DATABASE IS READY NOW...'
+
 
 
 	
