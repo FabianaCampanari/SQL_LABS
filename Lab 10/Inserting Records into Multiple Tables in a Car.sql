@@ -6,7 +6,7 @@ EXEC sp_help tblMarcas;
 INSERT INTO tblMarcas
 VALUES('FIAT');
 
--- InserÁ„o de v·rias linhas
+-- Inser√ß√£o de v√°rias linhas
 INSERT INTO tblMarcas
 VALUES
 ('FORD'),('CHEVROLET'),('VOLKSWAGEN'),('HONDA');
