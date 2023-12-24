@@ -1,6 +1,6 @@
 /*
 	Criando um Banco de Dados
-	Autor: HÈlio de Almeida
+	Autor: H√©lio de Almeida
 	Data: 09/01/2016
 */
 
@@ -11,6 +11,8 @@ CREATE DATABASE DepartamentoPessoal;
 USE DepartamentoPessoal;
 
 -- Excluir um Banco de Dados
--- O mesmo n„o poder· estar em uso
+-- O mesmo n√£o poder√° estar em uso
 USE master;
 DROP DATABASE DepartamentoPessoal;
+
+
