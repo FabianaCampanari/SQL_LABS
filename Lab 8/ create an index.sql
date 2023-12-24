@@ -1,14 +1,16 @@
 USE Concessionaria;
 
--- visualizar Ìndices
+-- visualizar √≠ndices
 EXEC sp_help tblEstoque;
 
--- Criando Õndice
+-- Criando √çndice
 CREATE NONCLUSTERED INDEX IX_tblEstoque
 ON tblEstoque(dataEntrada DESC);
 
 EXEC sp_helpindex tblEstoque;
 
--- Excluir um Õndice
+-- Excluir um √çndice
 DROP INDEX IX_tblEstoque
 ON tblEstoque;
+
+
