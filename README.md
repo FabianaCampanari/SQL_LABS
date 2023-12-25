@@ -5,7 +5,7 @@
 
 
 
-•	**SSMS - SQL Server Management Studio Interface:** Connecting to a server,
+ SQL Server Management Studio Interface:** 
 #
 
 
