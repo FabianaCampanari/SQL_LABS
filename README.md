@@ -1,4 +1,4 @@
-## <p align="center"> 🛢️ SQL LABS - 
+## <p align="center"> 🛢️ SQL LABS - Creating Database Systems  on SQL Servers
 
 The course SQL - Creating Database Systems is aimed at developers and those familiar with programming logic who intend to create and manage a database system in SQL Server.
 
