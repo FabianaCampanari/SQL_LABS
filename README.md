@@ -9,7 +9,7 @@
 
 #
 
-The SQL code below is an example related to a car dealership database. It includes the creation of tables for brands and models, along with foreign key constraints for the relationship between them. Additionally, it uses stored procedures like sp_help to view the structure of the created tables.
+#### The SQL code below is an example related to a car dealership database. It includes the creation of tables for brands and models, along with foreign key constraints for the relationship between them. Additionally, it uses stored procedures like sp_help to view the structure of the created tables.
 
 
 <p align="center">
@@ -17,7 +17,11 @@ The SQL code below is an example related to a car dealership database. It includ
 
 
 
+
 <img width="546" alt="Screenshot 2023-12-25 at 17 38 20" src="">
+
+
+
 
 
 
