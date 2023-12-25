@@ -4,8 +4,6 @@
 
 
 
- essential points to use the various features of SQL Server and its data query and manipulation structure
-
 The course covers a variety of topics, including:
 
 
