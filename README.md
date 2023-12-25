@@ -13,7 +13,7 @@ The SQL code below is an example related to a car dealership database. It includ
 
 
 <p align="center">
-<img src="https://github.com/FabianaCampanari/FabianaCampanari/assets/113218619/b3789e50-93e1-48ac-b82e-1db626f7cbb2"/>
+<img src=""/>
 
 
 
