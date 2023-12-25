@@ -4,4 +4,6 @@
 *.sql linguist-language=sql
 *.sql linguist-language=SQL
 *.tsql linguist-language=TSQL
+*.xml linguist-detectable=true
+
 
