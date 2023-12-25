@@ -5,7 +5,7 @@
 
 
 
-•	**SSMS - SQL Server Management Studio Interface:** Connecting to a server, main panels, configuring the editor environment.
+•	**SSMS - SQL Server Management Studio Interface:** Connecting to a server, main panels, configuring 
 #
 
 
