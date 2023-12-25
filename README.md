@@ -2,7 +2,7 @@
 
 # <p align="center"> 🛢️ SQL LABS - Creating Database Systems  on SQL Servers
 
-The course SQL - Creating Database Systems is aimed at developers and those familiar with programming logic who intend to create and manage a database system in SQL Server.
+
 
 During the course, Professor Hélio de Almeida teaches advanced techniques for database system structure, as well as the mechanism and structure of SQL and other essential points to use the various features of SQL Server and its data query and manipulation structure
 
