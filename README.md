@@ -17,7 +17,7 @@ The SQL code below is an example related to a car dealership database. It includ
 
 
 
-<img width="546" alt="Screenshot 2023-12-25 at 17 38 20" src="https://github.com/FabianaCampanari/SQL_LABS/assets/113218619/069f2147-992e-4183-b997-c23d41530dda">
+
 
 
 
