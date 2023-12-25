@@ -4,8 +4,6 @@
 
 
 
-The course 
-
 
 •	**SSMS - SQL Server Management Studio Interface:** Connecting to a server, main panels, configuring the editor environment.
 #
