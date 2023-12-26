@@ -12,6 +12,8 @@ Here, you will find advanced techniques for the structure of a database system, 
 
 - **SSMS - SQL Server Management Studio Interface:**
 
+    - Connecting to a server, main panels, configuring the editor environment.
+
 
 
 
