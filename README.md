@@ -6,7 +6,7 @@ Here, you will find advanced techniques for the structure of a database system, 
 
 #
 
-#### <p align="center"> The repository covers a variety of topics, including:
+### <p align="center"> The repository covers a variety of topics, including:
 
 - **SSMS - SQL Server Management Studio Interface:**
 
