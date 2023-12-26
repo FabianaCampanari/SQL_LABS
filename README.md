@@ -31,6 +31,10 @@ Here, you will find advanced techniques for the structure of a database system, 
 
 - **Introducing T-SQL:**
 
+    - Origin of SQL, T-SQL, subsets of SQL commands, instruction example.
+
+  
+
 
 
 
