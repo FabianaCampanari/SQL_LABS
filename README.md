@@ -2,7 +2,7 @@
 
 # <p align="center"> 🛢️ SQL LABS - Creating Database Systems  on SQL Servers
 
-Here, you will find advanced techniques for the structure of a database system, as well as the mechanism and structure of SQL
+Here, you will find advanced techniques for the structure of a database system, as well as the mechanism and structure of SQL  and other essential points to use the various features of SQL Server and its data query 
 
 
 
