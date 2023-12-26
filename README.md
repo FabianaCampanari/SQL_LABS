@@ -14,6 +14,8 @@ Here, you will find advanced techniques for the structure of a database system, 
 
     - Connecting to a server, main panels, configuring the editor environment.
 
+<br>
+
 
 
 
