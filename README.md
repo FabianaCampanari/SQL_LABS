@@ -8,6 +8,8 @@ Here, you will find advanced techniques for the structure of a database system, 
 
 ### <p align="center"> The repository covers a variety of topics, including:
 
+<br>
+
 - **SSMS - SQL Server Management Studio Interface:**
 
 
