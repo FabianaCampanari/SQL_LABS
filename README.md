@@ -26,6 +26,8 @@ Here, you will find advanced techniques for the structure of a database system, 
 - **Relational model and data normalization:**
 
     - Concept of normalization, normal forms, relational model, descriptive model, conceptual model, logical model physical model.
+ 
+<br>
 
 
 
