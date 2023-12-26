@@ -37,7 +37,7 @@ Here, you will find advanced techniques for the structure of a database system, 
 
   - **Creating a database via T-SQL:**
 
-     - Creating a script project, creating a script, executing a script,
+     - Creating a script project, creating a script, executing a script, putting a database in use, creating
 
 
 
