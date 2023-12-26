@@ -35,7 +35,7 @@ Here, you will find advanced techniques for the structure of a database system, 
 
 <br>
 
-  
+  - **Creating a database via T-SQL:**
 
 
 
