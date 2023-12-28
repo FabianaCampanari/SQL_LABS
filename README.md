@@ -51,6 +51,8 @@ Here, you will find advanced techniques for the structure of a database system, 
 
 - **Creating indexes:**
 
+-   - Concept of indexes, advantages and disadvantages of indexes
+
 
 
 
