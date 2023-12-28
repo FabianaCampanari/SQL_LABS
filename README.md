@@ -45,6 +45,7 @@ Here, you will find advanced techniques for the structure of a database system, 
 
 - **Constraints and table structure:**
 
+  - Creating rules, changing table structures.
 
 
 #
