@@ -57,7 +57,7 @@ Here, you will find advanced techniques for the structure of a database system, 
 
 - **Attaching databases:**
 
-  - How to attach the databases
+  - How to attach the databases that will be used in the course.
 
 
 
