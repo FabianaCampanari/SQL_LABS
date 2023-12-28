@@ -67,6 +67,8 @@ Here, you will find advanced techniques for the structure of a database system, 
  
 <br>
 
+- **Working with transactions:**
+
  
 
 
