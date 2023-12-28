@@ -55,6 +55,10 @@ Here, you will find advanced techniques for the structure of a database system, 
 
 
 
+- **Attaching databases:**
+
+
+
 
 
 
