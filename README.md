@@ -71,6 +71,11 @@ Here, you will find advanced techniques for the structure of a database system, 
 
   - Types of transactions, OUTPUT instruction.
 
+
+ - **Data query:**
+ 
+    
+
  
 
 
