@@ -76,10 +76,12 @@ Here, you will find advanced techniques for the structure of a database system, 
  - **Data query:**
 
    - The group of DQL commands, ordering data, the TOP clause.
+
+  <br>   
   
 - **Data query:**
  
-<br>    
+ 
     
     
    
