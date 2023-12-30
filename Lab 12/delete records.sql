@@ -13,7 +13,8 @@ WHERE Uf = 'GO';
 USE SisDep;
 
 -- Exclusão Bem Sucedida
-
+DELETE FROM Funcionario
+WHERE idMatricula = 1001;
 
 -- Exclusão Mal Sucedida (ERRO)
 DELETE FROM Funcionario
