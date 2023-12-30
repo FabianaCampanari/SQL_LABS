@@ -12,11 +12,10 @@ WHERE Uf = 'GO';
 
 USE SisDep;
 
--- Exclus„o Bem Sucedida
-DELETE FROM Funcionario
-WHERE idMatricula = 1001;
+-- Exclus√£o Bem Sucedida
 
--- Exclus„o Mal Sucedida (ERRO)
+
+-- Exclus√£o Mal Sucedida (ERRO)
 DELETE FROM Funcionario
 WHERE idMatricula = 1000;
 
