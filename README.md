@@ -9,7 +9,7 @@ Here, you will find advanced techniques for the structure of a database system, 
 #
 <br>
 
-## <p align="center"> ***This repository covers a variety of topics, including:***
+#### <p align="center"> ***This repository covers a variety of topics, including:***
 
 <br>
 
