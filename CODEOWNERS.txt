@@ -1,5 +1,5 @@
 @FabianaCampanari
 
-@FabianaCampanari owns all files in this repository.
+@FabianaCampanari owns all files in this repo.
 
 
