@@ -1,16 +1,16 @@
 USE SeguroVeiculo;
 SELECT * FROM Apolices;
 
--- Iniciar uma transaÁ„o
+-- Iniciar uma transa√ß√£o
 BEGIN TRANSACTION
 
--- verificar se h· alguma transaÁ„o ativa
+-- verificar se h√° alguma transa√ß√£o ativa
 SELECT @@TRANCOUNT;
 
 UPDATE Apolices
 SET valorApolice = valorApolice + 1500;
 
--- Cancelar uma operaÁ„o
+-- Cancelar uma opera√ß√£o
 ROLLBACK TRANSACTION
 
 BEGIN TRAN
@@ -28,9 +28,8 @@ BEGIN TRAN
 	SET Salario = Salario * 1.1
 	OUTPUT
 		deleted.idMatricula,
-		deleted.NomeFuncionario,
-		deleted.Salario AS [Sal·rio Anterior],
-		inserted.Salario AS [Novo Sal·rio]
+
+	
 	WHERE Salario <= 3000
 
 COMMIT
