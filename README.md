@@ -61,7 +61,7 @@ Here, you will find advanced techniques for the structure of a database system, 
 
 <br>
 
-- **Manipulating data:**
+- ***Manipulating data:***
 
   - Inserting records, updating records, deleting records.
  
