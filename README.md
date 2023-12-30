@@ -49,7 +49,7 @@ Here, you will find advanced techniques for the structure of a database system, 
 
 <br>
 
-- **Creating indexes:**
+- ***Creating indexes:***
 
   - Concept of indexes, advantages and disadvantages of indexes, clustered indexes, non-clustered indexes.
 
