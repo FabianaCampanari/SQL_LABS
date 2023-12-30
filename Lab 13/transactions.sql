@@ -28,8 +28,10 @@ BEGIN TRAN
 	SET Salario = Salario * 1.1
 	OUTPUT
 		deleted.idMatricula,
+	        deleted.NomeFuncionario,
+		deleted.Salario AS [Salário Anterior],
+		inserted.Salario AS [Novo Salário]
 
-	
 	WHERE Salario <= 3000
 
 COMMIT
