@@ -19,7 +19,7 @@ Here, you will find advanced techniques for the structure of a database system, 
 
 <br>
 
-- **Creating a database via SSMS:**
+- ***Creating a database via SSMS:***
 
     - How data is organized, creating a database, creating a table, manipulating data (insertion, editing, and deletion).
  
