@@ -81,7 +81,7 @@ Here, you will find advanced techniques for the structure of a database system, 
 
   - ***Filters with operators:***
 
-     Relational operators, arithmetic operators
+    - Relational operators, arithmetic operators
 
 
 
