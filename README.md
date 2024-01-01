@@ -83,12 +83,9 @@ Here, you will find advanced techniques for the structure of a database system, 
 
     - Relational operators, arithmetic operators, logical operators,compound operator, filter examples with WHERE.
    
-
-
-  <br>   
+<br>   
    
-
-- **Filters BETWEEN, LIKE, and IN:**
+- ***Filters BETWEEN, LIKE, and IN:***
 
 
 
