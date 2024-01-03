@@ -85,8 +85,10 @@ Here, you will find advanced techniques for the structure of a database system, 
    
 <br>   
    
-- ***Filters BETWEEN, LIKE, and IN:***
+- ***Filters BETWEEN, LIKE, and IN
 
+
+## SQL Certificate
 
 
   
