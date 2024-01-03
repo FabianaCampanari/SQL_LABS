@@ -88,25 +88,6 @@ Here, you will find advanced techniques for the structure of a database system, 
 - ***Filters BETWEEN, LIKE, and IN
 
 
-## SQL Certificate
-
-![SQL-Labs- Creating Database System](https://github.com/FabianaCampanari/SQL_LABS/assets/113218619/b6fa7a1e-e358-44d5-9d3b-c713d66f225e)
-
-
-  
-
-
- 
- 
-    
-    
-   
-
- 
-
-
-
-
 
 #
 
