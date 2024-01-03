@@ -104,6 +104,8 @@ The SQL code below is an example related to a car dealership database. It includ
 
 ## SQL Certificate
 
+<br>
+
 
 
 #
