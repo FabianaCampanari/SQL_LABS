@@ -87,7 +87,7 @@ Here, you will find advanced techniques for the structure of a database system, 
    
 - ***Filters BETWEEN, LIKE, and IN:***
 
-  - Search by range
+  - Search by range  of valores.
 
    
 
