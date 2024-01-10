@@ -92,7 +92,7 @@ Here, you will find advanced techniques for the structure of a database system, 
 
 - **Joining data:**
 
-     - Data union.UNION operator
+     - Data union and UNION operator
    
 
 
