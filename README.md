@@ -90,7 +90,7 @@ Here, you will find advanced techniques for the structure of a database system, 
   - Search by range of values, search by a list, of values, search by part of content.
  
 
-- Joining
+- **Joining**
    
 
 
