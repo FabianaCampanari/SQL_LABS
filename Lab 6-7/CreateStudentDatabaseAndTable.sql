@@ -65,13 +65,6 @@ GO
 
 
 
---7. No código seguinte, teste a constraint UNIQUE:
-
--- Gera erro pois viola a CONSTRAINT UNIQUE
-INSERT TB_PRODUTO 
-(DESCRICAO, COD_TIPO, PRECO_CUSTO, PRECO_VENDA,
- QTD_REAL, QTD_MINIMA)
-VALUES ('TESTANDO INCLUSAO', 10, 10, 12, 10, 5 );
 
 --8. No próximo código, teste a constraint FOREIGN KEY:
 
