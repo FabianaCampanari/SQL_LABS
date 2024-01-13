@@ -1,0 +1,10 @@
+
+--3. Em seguida, teste a constraint UNIQUE criada:
+
+-- Testando a constraint UNIQUE
+INSERT TB_TIPO_PRODUTO VALUES ('MOUSE');
+INSERT TB_TIPO_PRODUTO VALUES ('PEN-DRIVE');
+INSERT TB_TIPO_PRODUTO VALUES ('HARD DISK');
+-- Ao tentar inserir o SQL gera um erro de violação de
+-- CONSTRAINT UNIQUE
+INSERT TB_TIPO_PRODUTO VALUES ('HARD DISK');
