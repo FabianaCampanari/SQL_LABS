@@ -3,7 +3,10 @@ GO
 CREATE DATABASE TESTE_CONSTRAINT;
 GO
 
-USE TESTE_CONSTRAINT;
+
+
+	
+-USE TESTE_CONSTRAINT;
 
 --2. Agora, crie a tabela TB_TIPO_PRODUTO com os tipos (categorias) de produto:
 GO
