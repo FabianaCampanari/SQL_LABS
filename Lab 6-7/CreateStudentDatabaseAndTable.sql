@@ -72,10 +72,7 @@ Existem 5 tipos de constraints:
       Impede a duplicação de outro campo além da
       chave primária.
 
-   Condição de validade (CHECK):
-      Testa uma condição toda vez que formos gravar
-      dados em uma tabela. Se a condição for FALSA,
-      os dados não serão gravados.
+  
 
  
 */
