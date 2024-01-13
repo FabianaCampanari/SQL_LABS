@@ -67,10 +67,7 @@ Existem 5 tipos de constraints:
    Chave Primária (PRIMARY KEY):
       Indica o(s) campo(s) que identifica(m) uma linha 
       da tabela. Impede também a duplicação do campo.
-       
-   Chave Única (UNIQUE): 
-      Impede a duplicação de outro campo além da
-      chave primária.
+   .
 
   
 
