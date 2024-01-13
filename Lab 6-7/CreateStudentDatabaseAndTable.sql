@@ -57,11 +57,6 @@ GO
 
 
 /*
-CONSTRAINTS -> Validações, Restrições, Consistência
-               de dados. As constraints permitem
-               validar os dados que são gravados nas
-               tabelas do banco de dados.
-
 
   
 
