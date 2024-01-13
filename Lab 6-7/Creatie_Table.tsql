@@ -31,3 +31,8 @@ CREATE TABLE tblModelos
 
 Exec sp_help tblModelos;
 
+    
+   Chave Única (UNIQUE): 
+      Impede a duplicação de outro campo além da
+      chave primária
+
