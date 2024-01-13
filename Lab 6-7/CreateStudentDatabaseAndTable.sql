@@ -62,12 +62,6 @@ CONSTRAINTS -> Validações, Restrições, Consistência
                validar os dados que são gravados nas
                tabelas do banco de dados.
 
-Existem 5 tipos de constraints:
-   
-   Chave Primária (PRIMARY KEY):
-      Indica o(s) campo(s) que identifica(m) uma linha 
-      da tabela. Impede também a duplicação do campo.
-   .
 
   
 
