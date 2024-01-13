@@ -61,8 +61,6 @@ GO
 
  
 
-
-
 --1. Primeiramente, crie o banco de dados TESTE_CONSTRAINT:
 GO
 CREATE DATABASE TESTE_CONSTRAINT;
