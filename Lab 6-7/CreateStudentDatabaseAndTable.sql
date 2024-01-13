@@ -67,16 +67,9 @@ GO
 
 
 
----9. Por fim, o código adiante testa a constraint CHECK:
 
--- Gera um erro pois viola a constraint CHECK –
--- (CK_PRODUTO_PRECOS)
-INSERT TB_PRODUTO 
-(DESCRICAO, COD_TIPO, PRECO_CUSTO, PRECO_VENDA,
- QTD_REAL, QTD_MINIMA)
-VALUES ('TESTANDO INCLUSAO 2', 1, 14, 12, 10, 5 );
 
----1.6.3.2.	Criando constraints com ALTER TABLE
+Criando constraints com ALTER TABLE
 
 USE TESTE_CONSTRAINT;
 
