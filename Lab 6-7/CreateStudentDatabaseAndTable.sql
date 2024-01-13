@@ -66,13 +66,6 @@ GO
 
 
 
---8. No próximo código, teste a constraint FOREIGN KEY:
-
--- Gera um erro pois viola a CONSTRAINT FOREIGN KEY
-INSERT TB_PRODUTO 
-(DESCRICAO, COD_TIPO, PRECO_CUSTO, PRECO_VENDA,
- QTD_REAL, QTD_MINIMA)
-VALUES ('TESTANDO INCLUSAO 2', 10, 10, 12, 10, 5 );
 
 ---9. Por fim, o código adiante testa a constraint CHECK:
 
