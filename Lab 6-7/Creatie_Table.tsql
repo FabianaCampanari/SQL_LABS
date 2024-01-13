@@ -31,6 +31,9 @@ CREATE TABLE tblModelos
 
 
 
+
+/*
+
 Existem 5 tipos de constraints:
    
    Chave Primária (PRIMARY KEY):
