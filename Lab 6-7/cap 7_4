@@ -1,8 +1,0 @@
---6. Feito isso, teste a constraint DEFAULT criada anteriormente. A sequência de código adiante gera os valores para os campos DATA_CADASTRO e SN_ATIVO que não foram mencionados no INSERT:
-
-INSERT TB_PRODUTO 
-(DESCRICAO, COD_TIPO, PRECO_CUSTO, PRECO_VENDA,
- QTD_REAL, QTD_MINIMA)
-VALUES ('TESTANDO INCLUSAO', 1, 10, 12, 10, 5 );
---
-SELECT * FROM TB_PRODUTO;
