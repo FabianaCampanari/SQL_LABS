@@ -95,13 +95,6 @@ Here, you will find advanced techniques for the structure of a database system, 
      - Data union, UNION operator, UNION ALL operator.
    
 
-
-
-
-
-
-
-
 <br>
 
 ## <p align="center"> Example of SQL Code
@@ -116,7 +109,9 @@ The SQL code below is an example related to a car dealership database. It includ
 <p align="center">
 <img src="https://github.com/FabianaCampanari/SQL_LABS/assets/113218619/069f2147-992e-4183-b997-c23d41530dda"/>
 
-## SQL Certificate
+
+
+## <p align="center"> SQL Certificate
 
 <br>
 
