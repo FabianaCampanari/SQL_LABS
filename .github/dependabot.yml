@@ -15,7 +15,6 @@ updates:
         update-types:
           - "minor"
           - "patch"
-
   # Watch the per-ecosystem native helpers
   - package-ecosystem: "composer"
     directory: "/composer/helpers/v1"
