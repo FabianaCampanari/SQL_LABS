@@ -104,7 +104,7 @@ Here, you will find advanced techniques for the structure of a database system, 
 
 <br>
 
-## Example of SQL Code
+## <p align="center"> Example of SQL Code
 
 <br>
 
