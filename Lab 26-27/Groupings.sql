@@ -15,4 +15,11 @@ SELECT
 FROM Dados
 GROUP BY Cidade,Produto;
 
--
+-- Filtros em Agrupamento HAVING
+
+SELECT
+	Cidade,SUM(TOTAL) AS [Faturamento Total]
+FROM Dados
+GROUP BY Cidade
+HAVING SUM(TOTAL) > 20000
+ORDER BY 2;
