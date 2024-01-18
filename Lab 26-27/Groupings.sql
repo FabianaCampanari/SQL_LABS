@@ -34,5 +34,5 @@ WITH ROLLUP
 SELECT
 	Cidade,SUM(TOTAL) AS [Faturamento Total]
 FROM Dados
-GROUP BY Cidade
+GROUP BY Cidade, Produto
 WITH ROLLUP
