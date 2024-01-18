@@ -24,6 +24,12 @@ GROUP BY Cidade
 HAVING SUM(TOTAL) > 20000
 ORDER BY 2;
 
+SELECT
+	Cidade,Produto,SUM(TOTAL) AS [Faturamento Total]
+FROM Dados
+GROUP BY Cidade,Produto
+WITH ROLLUP
+
 -- Subtotais
 SELECT
 	Cidade,SUM(TOTAL) AS [Faturamento Total]
