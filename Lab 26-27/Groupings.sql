@@ -15,8 +15,8 @@ SELECT
 FROM Dados
 GROUP BY Cidade,Produto;
 
+\
 -- Filtros em Agrupamento HAVING
-
 SELECT
 	Cidade,SUM(TOTAL) AS [Faturamento Total]
 FROM Dados
