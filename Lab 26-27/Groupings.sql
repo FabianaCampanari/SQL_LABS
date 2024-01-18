@@ -1,3 +1,4 @@
+
 USE SysConVendas;
 SELECT * FROM DADOS;
 
@@ -15,8 +16,8 @@ SELECT
 FROM Dados
 GROUP BY Cidade,Produto;
 
-\
 -- Filtros em Agrupamento HAVING
+
 SELECT
 	Cidade,SUM(TOTAL) AS [Faturamento Total]
 FROM Dados
@@ -24,15 +25,33 @@ GROUP BY Cidade
 HAVING SUM(TOTAL) > 20000
 ORDER BY 2;
 
+-- Subtotais
+SELECT
+	Cidade,SUM(TOTAL) AS [Faturamento Total]
+FROM Dados
+GROUP BY Cidade
+WITH ROLLUP
+
+
 SELECT
 	Cidade,Produto,SUM(TOTAL) AS [Faturamento Total]
 FROM Dados
 GROUP BY Cidade,Produto
 WITH ROLLUP
 
--- Subtotais
 SELECT
-	Cidade,SUM(TOTAL) AS [Faturamento Total]
+	Cidade,Produto,SUM(TOTAL) AS [Faturamento Total]
 FROM Dados
-GROUP BY Cidade, Produto
-WITH ROLLUP
+GROUP BY Cidade,Produto
+WITH CUBE
+
+--------------------------------------------------------------------------
+USE SisDep;
+
+-- Agrupamento com jun��es
+
+SELECT
+	NomeFuncionario,count(*) [N� de Dependentes] 
+FROM Funcionario AS F INNER JOIN Dependente AS D
+ON F.idMatricula = D.idMatricula
+GROUP BY NomeFuncionario;
