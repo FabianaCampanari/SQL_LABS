@@ -31,5 +31,5 @@ WHERE DATA_EMISSAO BETWEEN '2014.1.1' AND '2014.1.31'
 
 /* 5. Listar todos os pedidos do Vendedor
       C�digo 1 em Jan/2014. */
-SELECT * FR
+SELECT * FROM TB_PEDIDO
 
