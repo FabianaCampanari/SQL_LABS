@@ -22,11 +22,14 @@ WHERE DATA_EMISSAO BETWEEN '2014.1.1' AND '2014.1.31';
 SELECT * FROM TB_PEDIDO
 WHERE DATA_EMISSAO BETWEEN '2014.6.1' AND '2014.6.30';
 
-* 4. Listar todos os pedidos com data de
+/* 4. Listar todos os pedidos com data de
       emiss�o em janeiro e junho de 2014. */
 SELECT * FROM TB_PEDIDO
 WHERE DATA_EMISSAO BETWEEN '2014.1.1' AND '2014.1.31'
       OR
       DATA_EMISSAO BETWEEN '2014.6.1' AND '2014.6.30';
 
+/* 5. Listar todos os pedidos do Vendedor
+      C�digo 1 em Jan/2014. */
+SELECT * FR
 
