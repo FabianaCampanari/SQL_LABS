@@ -233,3 +233,6 @@ ORDER BY SALARIO;
 SELECT * FROM TB_EMPREGADO
 WHERE SALARIO < 3000 OR SALARIO > 5000
 ORDER BY SALARIO;
+-- It can also be done using the NOT operator. Those 
+-- who are not between 3000 and 5000 are outside this 
+-- range.
