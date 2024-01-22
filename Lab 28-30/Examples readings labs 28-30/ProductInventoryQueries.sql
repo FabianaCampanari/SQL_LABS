@@ -396,4 +396,4 @@ WHERE DATEPART(YEAR, DATA_ADMISSAO) = 1996 AND
 
 -- Funcionarios admitidos em uma sexta-feira
 SELECT 
-  CODFUN, NOME
+  CODFUN, NOME, DATA_ADMISSAO
