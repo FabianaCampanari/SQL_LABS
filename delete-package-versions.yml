@@ -1,0 +1,57 @@
+- uses: actions/delete-package-versions@v4
+  with:
+  # Can be a single package version id, or a comma separated list of package version ids.
+  # Defaults to an empty string.
+  package-version-ids:
+
+  # Owner of the package.
+  # Defaults to the owner of the repo executing the workflow.
+  # Required if deleting a version from a package hosted in a different org than the one executing the workflow.
+  owner:
+
+  # Name of the package.
+  # Required
+  package-name:
+
+  # Type of the package. Can be one of container, maven, npm, nuget, or rubygems.
+  # Required
+  package-type:
+
+  # The number of old versions to delete starting from the oldest version.
+  # Defaults to 1.
+  num-old-versions-to-delete:
+
+  # The number of latest versions to keep.
+  # This cannot be specified with `num-old-versions-to-delete`. By default, `min-versions-to-keep` takes precedence over `num-old-versions-to-delete`.
+  # When set to 0, all deletable versions will be deleted.
+  # When set greater than 0, all deletable package versions except the specified number will be deleted.
+  min-versions-to-keep:
+
+  # The package versions to exclude from deletion.
+  # Takes regex for the version name as input.
+  # By default nothing is ignored. This is ignored when `delete-only-pre-release-versions` is true
+  ignore-versions:
+
+  # If true it will delete only the pre-release versions.
+  # The number of pre-release versions to keep can be set by using `min-versions-to-keep` value with this.
+  # When `min-versions-to-keep` is 0, all pre-release versions get deleted.
+  # Defaults to false.
+  # Cannot be used with `num-old-versions-to-delete` and `ignore-versions`.
+  delete-only-pre-release-versions:
+
+  # If true it will delete only the untagged versions in case of container package.
+  # Does not work for other package types and will be ignored.
+  # The number of untagged versions to keep can be set by using `min-versions-to-keep` value with this.
+  # When `min-versions-to-keep` is 0, all untagged versions get deleted.
+  # Defaults to false.
+  # Cannot be used with `num-old-versions-to-delete`.
+  delete-only-untagged-versions:
+
+  # The token used to authenticate with GitHub Packages.
+  # Defaults to github.token.
+  # Required if the repo running the workflow does not have access to delete the package.
+  #   For rubygems and maven package, repo has access if package is hosted in the same repo as the workflow.
+  #   For container, npm and nuget package, repo has access if assigned **Admin** role under Package Settings > Manage Actions Access.
+  #   If `package-version-ids` is given the token only needs the delete packages scope.
+  #   If `package-version-ids` is not given the token needs the delete packages scope and the read packages scope
+  token:
