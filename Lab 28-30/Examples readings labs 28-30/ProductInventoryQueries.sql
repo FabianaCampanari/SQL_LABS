@@ -381,3 +381,4 @@ SELECT MONTH(GETDATE())
 
 -- Empregados admitidos em dezembro
 SELECT * FROM TB_EMPREGADO
+WHERE MONTH(DATA_ADMISSAO) = 12
