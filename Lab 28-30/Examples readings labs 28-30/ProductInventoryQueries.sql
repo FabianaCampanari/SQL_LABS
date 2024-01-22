@@ -395,3 +395,5 @@ WHERE DATEPART(YEAR, DATA_ADMISSAO) = 1996 AND
    DATEPART(MONTH, DATA_ADMISSAO) = 12;
 
 -- Funcionarios admitidos em uma sexta-feira
+SELECT 
+  CODFUN, 
