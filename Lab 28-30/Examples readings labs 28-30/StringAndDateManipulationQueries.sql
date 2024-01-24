@@ -9,3 +9,4 @@ SELECT NOME, SALARIO, DATA_ADMISSAO,
         WHEN 3 THEN 'Mar�o'
         WHEN 4 THEN 'Abril'
         WHEN 5 THEN 'Maio'
+        WHEN 6 THEN 'Junho'
