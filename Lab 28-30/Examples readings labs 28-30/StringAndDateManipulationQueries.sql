@@ -21,4 +21,4 @@ FROM tb_EMPREGADO;;
 
 --3
 SELECT NOME 
-CONCAT(ENDERECO, ' - ', BAIRRO , ' - '
+CONCAT(ENDERECO, ' - ', BAIRRO , ' - ', CIDADE , '/'
