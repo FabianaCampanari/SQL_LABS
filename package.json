@@ -5,3 +5,5 @@
   "dependencies": {
     "@primer/css": "21.1.1"
   },
+  "license": "MIT"
+}
