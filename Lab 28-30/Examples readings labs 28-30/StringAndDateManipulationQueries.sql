@@ -16,3 +16,4 @@ SELECT NOME, SALARIO, DATA_ADMISSAO,
         WHEN 10 THEN 'Outubro'
         WHEN 11 THEN 'Novembro'
         WHEN 12 THEN 'Dezembro'
+       END AS MES
