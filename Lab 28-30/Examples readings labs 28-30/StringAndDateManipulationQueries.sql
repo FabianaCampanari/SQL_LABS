@@ -17,4 +17,4 @@ SELECT NOME, SALARIO, DATA_ADMISSAO,
         WHEN 11 THEN 'Novembro'
         WHEN 12 THEN 'Dezembro'
        END AS MES
-FROM tb_SALARIO;
+FROM tb_EMPREGADO;;
