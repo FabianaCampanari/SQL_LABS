@@ -16,4 +16,4 @@ SELECT STR (213);
 -- Retorna uma parte do texto a partir de uma posi��o definida
 SELECT SUBSTRING ('Paralelep�pedo',3,7);
 
-SELECT CONCAT
+SELECT CONCAT ( 'SQL ' )
