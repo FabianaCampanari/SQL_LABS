@@ -2,3 +2,4 @@
 USE PEDIDOS;
 
 -- LEN
+SELECT LEN
