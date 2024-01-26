@@ -12,3 +12,5 @@ SELECT REVERSE ('amina');
 
 -- Converte um n�mero em texto
 SELECT STR (213);
+
+SELECT SUBSTRING
