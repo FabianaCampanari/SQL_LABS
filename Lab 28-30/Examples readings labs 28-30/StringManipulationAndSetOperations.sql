@@ -1,5 +1,5 @@
 -- Chapter 10
 USE PEDIDOS;
 
--- LEN
+-- LEN - conta a quantidade de caracteres
 SELECT LEN ('Brasil');
