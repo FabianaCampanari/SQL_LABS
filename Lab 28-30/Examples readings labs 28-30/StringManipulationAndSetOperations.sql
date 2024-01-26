@@ -1,3 +1,3 @@
--- CAP�TULO 10
+-- Chapter 10
 USE PEDIDOS;
 
