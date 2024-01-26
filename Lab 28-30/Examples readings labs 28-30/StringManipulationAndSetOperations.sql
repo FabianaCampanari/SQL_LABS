@@ -2,4 +2,4 @@
 USE PEDIDOS;
 
 -- LEN
-SELECT LEN
+SELECT LEN ('Brasil');
