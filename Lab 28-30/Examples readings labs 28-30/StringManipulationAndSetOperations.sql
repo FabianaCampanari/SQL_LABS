@@ -3,3 +3,5 @@ USE PEDIDOS;
 
 -- LEN - conta a quantidade de caracteres
 SELECT LEN ('Brasil');
+
+SELECT REPLICATE
