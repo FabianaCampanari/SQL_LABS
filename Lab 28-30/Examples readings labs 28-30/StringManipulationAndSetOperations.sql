@@ -10,4 +10,4 @@ SELECT REPLICATE ('Teste',4);
 -- Inverte o texto
 SELECT REVERSE ('amina');
 
-SELECT STR
+SELECT STR (213);
