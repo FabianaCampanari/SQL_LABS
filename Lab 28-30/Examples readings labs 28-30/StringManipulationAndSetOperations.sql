@@ -13,4 +13,5 @@ SELECT REVERSE ('amina');
 -- Converte um n�mero em texto
 SELECT STR (213);
 
+-- Retorna uma parte do texto
 SELECT SUBSTRING ('Paralelep�pedo',3)
