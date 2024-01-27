@@ -22,4 +22,4 @@ SELECT CONCAT ( 'SQL ','m�dulo ','I');
 -- Charindex
 SELECT CHARINDEX ('A' , 'CASA')
 
--- Formata
+-- Formata uma express�o
