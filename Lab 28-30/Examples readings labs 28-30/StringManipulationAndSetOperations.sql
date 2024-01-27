@@ -23,4 +23,4 @@ SELECT CONCAT ( 'SQL ','m�dulo ','I');
 SELECT CHARINDEX ('A' , 'CASA')
 
 -- Formata uma express�o
-SELECT FORMAT
+SELECT FORMAT GETDATE()
