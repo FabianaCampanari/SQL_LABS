@@ -17,4 +17,4 @@ SELECT STR (213);
 SELECT SUBSTRING ('Paralelep�pedo',3,7);
 
 -- Concatena
-SELECT CONCAT ( 'SQL ''m�dulo ','I' )
+SELECT CONCAT ( 'SQL ','m�dulo ','I')
