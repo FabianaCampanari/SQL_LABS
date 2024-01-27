@@ -20,6 +20,6 @@ SELECT SUBSTRING ('Paralelep�pedo',3,7);
 SELECT CONCAT ( 'SQL ','m�dulo ','I');
 
 -- Charindex
-SELECT CHARINDEX ('A' 'CASA')
+SELECT CHARINDEX ('A' , 'CASA')
 
 -- Formata
