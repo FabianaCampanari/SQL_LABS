@@ -44,3 +44,4 @@ SELECT NOME, SALARIO, DATA_ADMISSAO,
            WHEN 6 THEN 'Sexta-Feira'
            WHEN 7 THEN 'S�bado' 
        END AS DIA_SEMANA 
+FROM TB_EMPREGADO;
