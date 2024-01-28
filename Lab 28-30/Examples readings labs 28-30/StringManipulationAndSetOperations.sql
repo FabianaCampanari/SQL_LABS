@@ -39,3 +39,4 @@ SELECT NOME, SALARIO, DATA_ADMISSAO,
            WHEN 1 THEN 'Domingo'
            WHEN 2 THEN 'Segunda-Feira'
            WHEN 3 THEN 'Ter�a-Feira'
+           WHEN 4 
