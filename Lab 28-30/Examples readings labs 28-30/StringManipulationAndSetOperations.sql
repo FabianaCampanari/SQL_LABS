@@ -28,4 +28,4 @@ SELECT FORMAT GETDATE() , 'dd/MM/yyyy');
 SELECT NOME, SALARIO, CASE SINDICALIZADO      
                         WHEN 'S' THEN 'Sim'
                         WHEN 'N' THEN 'N�o'
-           
+                        ELSE 'N/C'
