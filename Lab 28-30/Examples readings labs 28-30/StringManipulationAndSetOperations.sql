@@ -25,6 +25,6 @@ SELECT CHARINDEX ('A' , 'CASA')
 -- Formata uma express�o
 SELECT FORMAT GETDATE() , 'dd/MM/yyyy');
 
-      
+SELECT NOME, SALARIO      
           
            
