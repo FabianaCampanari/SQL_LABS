@@ -30,3 +30,4 @@ SELECT NOME, SALARIO, CASE SINDICALIZADO
                         WHEN 'N' THEN 'N�o'
                         ELSE 'N/C'
                       END AS [Sindicato?] ,
+       DATA_ADMISSAO
