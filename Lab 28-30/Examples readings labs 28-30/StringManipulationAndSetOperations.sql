@@ -31,3 +31,4 @@ SELECT NOME, SALARIO, CASE SINDICALIZADO
                         ELSE 'N/C'
                       END AS [Sindicato?] ,
        DATA_ADMISSAO
+FROM TB_EMPREGADO;
