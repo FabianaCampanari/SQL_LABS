@@ -26,6 +26,6 @@ SELECT CHARINDEX ('A' , 'CASA')
 SELECT FORMAT GETDATE() , 'dd/MM/yyyy');
 
 SELECT NOME, SALARIO, CASE SINDICALIZADO      
-                        WHEN 'S'
+                        WHEN 'S' THEN 'Sim'
           
            
