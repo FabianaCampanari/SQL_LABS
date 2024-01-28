@@ -37,4 +37,4 @@ FROM TB_EMPREGADO;
 SELECT NOME, SALARIO, DATA_ADMISSAO, 
        CASE DATEPART(WEEKDAY,DATA_ADMISSAO)
            WHEN 1 THEN 'Domingo'
-           WHEN 2 
+           WHEN 2 THEN 'Segunda-Feira'
