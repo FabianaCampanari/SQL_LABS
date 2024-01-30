@@ -4,7 +4,6 @@ USE SisDep;
 UPDATE Funcionario
 SET salario = salario + 100;
 
-
 -- Reajuste de 10% para todos os funcion�rios
 UPDATE Funcionario
 -- SET Salario = Salario * 0.1 + Salario
