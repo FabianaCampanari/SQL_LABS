@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Curso SQl Server">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="WSRV2012:sa">
+          <Created>2017-01-09T12:42:12.8661081-02:00</Created>
+          <Type>SQL</Type>
+          <Server>WSRV2012</Server>
+          <UserName>sa</UserName>
+          <Authentication>SQL</Authentication>
+          <InitialDB />
+          <LoginTimeout>15</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="Atualizar Registros.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WSRV2012:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WSRV2012</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>Atualizar Registros.sql</FullPath>
+        </FileNode>
+        <FileNode Name="BETWEEN - LIKE - IN.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WSRV2012:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WSRV2012</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>BETWEEN - LIKE - IN.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Consultar Dados.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WSRV2012:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WSRV2012</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>Consultar Dados.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Criando Constraints.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WSRV2012:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WSRV2012</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>Criando Constraints.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Criando Índices.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WSRV2012:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WSRV2012</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>Criando Índices.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Criando Tabelas.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WSRV2012:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WSRV2012</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>Criando Tabelas.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Criando Um Bando de Dados.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WSRV2012:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WSRV2012</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>Criando Um Bando de Dados.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Excluindo Registros.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WSRV2012:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WSRV2012</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>Excluindo Registros.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Inserindo Registros.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WSRV2012:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WSRV2012</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>Inserindo Registros.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Operadores.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WSRV2012:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WSRV2012</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>Operadores.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Transações.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WSRV2012:False:sa</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WSRV2012</AssociatedConnSrvName>
+          <AssociatedConnUserName>sa</AssociatedConnUserName>
+          <FullPath>Transações.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
