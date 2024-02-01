@@ -1,13 +1,13 @@
 --COMANDO DE CONSULTA SQL
 SELECT * FROM TB_DEPARTAMENTO
 
--- Coment·rio
+-- Coment√°rio
 -- Primeira aula de SQL Server
 
--- O comando a seguir executa uma consulta que retorna as informaÁıes da tabela de departamentos
+-- O comando a seguir executa uma consulta que retorna as informa√ß√µes da tabela de departamentos
 SELECT ...
 
 
 /*
-Bloco de texto comentado que n„o È executado pelo SQL
+Bloco de texto comentado que n√£o √© executado pelo SQL
 */
