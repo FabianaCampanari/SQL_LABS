@@ -1,9 +1,11 @@
--- CAPÕTULO 9
+-- CAP√çTULO 9
 USE PEDIDOS;
 USE PEDIDOS;
+
 -- neste caso, o grupo corresponde a toda a tabela TB_EMPREGADO
 SELECT AVG(SALARIO) AS SALARIO_MEDIO
 FROM TB_EMPREGADO;
+
 -- neste caso, o grupo corresponde aos empregados com
 -- COD_DEPTO = 2
 SELECT AVG(SALARIO) AS SALARIO_MEDIO FROM TB_EMPREGADO
@@ -12,6 +14,7 @@ WHERE COD_DEPTO = 2;
 -- neste caso, o grupo corresponde a toda a tabela TB_EMPREGADO
 SELECT COUNT(*) AS QTD_EMPREGADOS
 FROM TB_EMPREGADO;
+
 -- neste caso, o grupo corresponde aos empregados com
 -- COD_DEPTO = 2
 SELECT COUNT(COD_DEPTO) AS QTD_EMPREGADOS FROM TB_EMPREGADO
@@ -19,6 +22,7 @@ WHERE COD_DEPTO = 2;
 
 -- neste caso, o grupo corresponde a toda a tabela TB_EMPREGADO
 SELECT MIN(SALARIO) AS MENOR_SALARIO FROM TB_EMPREGADO;
+
 -- neste caso, o grupo corresponde aos empregados com
 -- COD_DEPTO = 2
 SELECT MIN(SALARIO) AS MENOR_SALARIO FROM TB_EMPREGADO
@@ -27,6 +31,7 @@ WHERE COD_DEPTO = 2
 -- neste caso, o grupo corresponde a toda a tabela TB_EMPREGADO
 SELECT MAX(SALARIO) AS MAIOR_SALARIO
 FROM TB_EMPREGADO;
+
 -- neste caso, o grupo corresponde aos empregados com
 -- COD_DEPTO = 2
 SELECT MAX(SALARIO) AS MAIOR_SALARIO FROM TB_EMPREGADO
@@ -35,19 +40,19 @@ WHERE COD_DEPTO = 2
 -- neste caso, o grupo corresponde a toda a tabela TB_EMPREGADO
 SELECT SUM(SALARIO) AS SOMA_SALARIOS
 FROM TB_EMPREGADO;
+
 -- neste caso, o grupo corresponde aos empregados com
 -- COD_DEPTO = 2
 SELECT SUM(SALARIO) AS SOMA_SALARIOS FROM TB_EMPREGADO
 WHERE COD_DEPTO = 2
 
 --	Exemplo 1
-
--- Total de sal·rio de cada departamento
+     
+-- Total de sal√°rio de cada departamento
 SELECT COD_DEPTO, SUM( SALARIO ) AS TOT_SAL
 FROM TB_EMPREGADO
 GROUP BY COD_DEPTO
 ORDER BY TOT_SAL;		
-
 
 --	Exemplo 2
 
@@ -61,7 +66,7 @@ ORDER BY TOT_SAL;
 --	Exemplo 3
 
 -- Consulta do tipo RANKING utilizando TOP n + ORDER BY
--- Os 5 departamentos que mais gastam com sal·rios
+-- Os 5 departamentos que mais gastam com sal√°rios
 SELECT TOP 5 E.COD_DEPTO, D.DEPTO, SUM( E.SALARIO ) AS TOT_SAL
 FROM TB_EMPREGADO E
      JOIN TB_DEPARTAMENTO D ON E.COD_DEPTO = D.COD_DEPTO
@@ -78,15 +83,15 @@ GROUP BY C.CODCLI, C.NOME
 ORDER BY TOT_COMPRADO DESC;
 
 -- Clientes que compraram em janeiro de 2014. Veremos que
--- todas as linhas do resultado ter„o um total n„o nulo.
+-- todas as linhas do resultado ter√£o um total n√£o nulo.
 SELECT C.CODCLI, C.NOME, SUM(P.VLR_TOTAL) AS TOT_COMPRADO
 FROM TB_PEDIDO P JOIN TB_CLIENTE C ON P.CODCLI = C.CODCLI
 WHERE P.DATA_EMISSAO BETWEEN '2014.1.1' AND '2014.1.31'
 GROUP BY C.CODCLI, C.NOME;
 
 
--- Neste caso, aparecer„o tambÈm os clientes que n„o 
--- compraram. Totais estar„o nulos.
+-- Neste caso, aparecer√£o tamb√©m os clientes que n√£o 
+-- compraram. Totais estar√£o nulos.
 SELECT C.CODCLI, C.NOME, SUM(P.VLR_TOTAL) AS TOT_COMPRADO
 FROM TB_PEDIDO P JOIN TB_CLIENTE C ON P.CODCLI = C.CODCLI
 WHERE P.DATA_EMISSAO BETWEEN '2014.1.1' AND '2014.1.31'
