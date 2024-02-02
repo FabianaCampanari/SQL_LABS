@@ -1,10 +1,11 @@
+
 /*
 |----------------------------------------------------------------------------					      
-| Manter os arquivos no diretÛrio C:\BANCOS\ 
+| Manter os arquivos no diret√≥rio C:\BANCOS\ 
 | Conectado como SA 
-| Configurar Permissıes da pasta no windows
-| Autor: HÈlio de Almeida										                           
-| CriaÁ„o: 20/1/2010 - ModificaÁ„o: 21/4/2017
+| Configurar Permiss√µes da pasta no windows
+| Autor: H√©lio de Almeida										                           
+| Cria√ß√£o: 20/1/2010 - Modifica√ß√£o: 21/4/2017
 |----------------------------------------------------------------------------
 
 */
@@ -16,4 +17,4 @@ DROP DATABASE BDClientes;
 			@FILENAME1 = 'C:\BANCOS\clientes.mdf',
 			@FILENAME2 = 'C:\BANCOS\clientes_log.ldf';
 	
-SELECT 'BANCOS INSTALADOS e Compactados!!!' AS ConfirmaÁ„o
+SELECT 'BANCOS INSTALADOS e Compactados!!!' AS Confirma√ß√£o
