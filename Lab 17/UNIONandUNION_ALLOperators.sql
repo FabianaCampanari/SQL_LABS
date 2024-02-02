@@ -1,12 +1,11 @@
 USE Clientes;
 
--- Todas os comandos SELECT dever„o ter o mesmo n˙mero de colunas
--- Todas as colunas unidas dever„o ter o mesmo tipo de dado
+-- Todas os comandos SELECT dever√£o ter o mesmo n√∫mero de colunas
+-- Todas as colunas unidas dever√£o ter o mesmo tipo de dado
 
 SELECT * FROM Clientes2015
 UNION
 SELECT * FROM Clientes2016;
-
 
 SELECT * FROM Clientes2015
 UNION
@@ -43,7 +42,7 @@ WHERE codigo = 2790
 
 
 SELECT * FROM Clientes2015
-WHERE Cidade = 'S„o Paulo'
+WHERE Cidade = 'S√£o Paulo'
 UNION
 SELECT * FROM Clientes2016
 WHERE Cidade = 'Rio de Janeiro'
