@@ -1,3 +1,4 @@
+
 USE Concessionaria;
 
 EXEC sp_help tblMarcas;
