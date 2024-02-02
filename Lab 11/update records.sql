@@ -1,3 +1,4 @@
+
 USE SisDep;
 
 -- B�nus de R$ 100,00 para todos os funcion�rios
