@@ -1,3 +1,4 @@
+
 USE SisDep;
 
 SELECT
@@ -5,7 +6,6 @@ SELECT
 FROM Funcionario AS F FULL JOIN Dependente AS D
 ON F.idMatricula = D.idMatricula
 ORDER BY F.NomeFuncionario;
-
 
 SELECT * FROM Depto;
 
