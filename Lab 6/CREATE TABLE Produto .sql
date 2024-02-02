@@ -1,3 +1,4 @@
+
 IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Produto')
 BEGIN
     PRINT 'Creating Product table';
