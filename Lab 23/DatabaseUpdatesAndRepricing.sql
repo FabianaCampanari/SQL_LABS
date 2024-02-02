@@ -1,8 +1,9 @@
+
 -- 1. Colocar em uso o banco de dados PEDIDOS
 -- Resp.:
 USE PEDIDOS;
 
-/* 2. Alterar a tabela TB_CARGO, mudando o sal·rio inicial do cargo
+/* 2. Alterar a tabela TB_CARGO, mudando o sal√°rio inicial do cargo
       OFFICE BOY para 600,00 */
 -- Resp.:      
 BEGIN TRAN
@@ -16,21 +17,21 @@ COMMIT
 -- Resp.:
 UPDATE TB_CARGO SET SALARIO_INIC *= 1.1;
 
-/* 4. Transferir para o campo SALARIO da tabela TB_EMPREGADO o sal·rio inicial
+/* 4. Transferir para o campo SALARIO da tabela TB_EMPREGADO o sal√°rio inicial
       cadastrado no cargo correspondente da TB_CARGO */
 -- Resp.:
--- SoluÁ„o 1
+-- Solu√ß√£o 1
 UPDATE TB_EMPREGADO 
 SET SALARIO = (SELECT SALARIO_INIC FROM TB_CARGO
                WHERE COD_CARGO = TB_EMPREGADO.COD_CARGO);
--- SoluÁ„o 2
+-- Solu√ß√£o 2
 UPDATE TB_EMPREGADO
 SET SALARIO = C.SALARIO_INIC
 FROM TB_EMPREGADO E 
      JOIN TB_CARGO C ON E.COD_CARGO = C.COD_CARGO;
                     
-/* 5. Reajustar os preÁos de venda de todos os produtos de modo que
-      fiquem 30% acima do preÁo de custo  (PRECO_VENDA = PRECO_CUSTO * 1.3) */
+/* 5. Reajustar os pre√ßos de venda de todos os produtos de modo que
+      fiquem 30% acima do pre√ßo de custo  (PRECO_VENDA = PRECO_CUSTO * 1.3) */
 -- Resp.:     
 BEGIN TRAN
 
@@ -44,8 +45,8 @@ WHERE PRECO_CUSTO > 0;
 
 COMMIT
 
-/* 6. Reajustar os preÁos de venda de todos os produtos de modo que
-       fiquem 20% acima do preÁo de custo, mas somente dos produtos com
+/* 6. Reajustar os pre√ßos de venda de todos os produtos de modo que
+       fiquem 20% acima do pre√ßo de custo, mas somente dos produtos com
        COD_TIPO = 5 */
 -- Resp.:       
 BEGIN TRAN
@@ -62,12 +63,12 @@ WHERE PRECO_CUSTO > 0 AND COD_TIPO = 5;
 
 COMMIT
   
-/* 7. Reajustar os preÁos de venda de todos os produtos de modo que
-   fiquem 40% acima do preÁo de custo, mas somente dos produtos com
-   descriÁ„o do tipo igual a REGUA  
+/* 7. Reajustar os pre√ßos de venda de todos os produtos de modo que
+   fiquem 40% acima do pre√ßo de custo, mas somente dos produtos com
+   descri√ß√£o do tipo igual a REGUA  
    Tabela TB_PRODUTO -> PRECO_VENDA = PRECO_CUSTO * 1.4
    para TB_PRODUTO com TB_TIPOPRODUTO.TIPO = 'REGUA'
-   … preciso fazer um JOIN de TB_PRODUTO com TB_TIPOPRODUTO */
+   √â preciso fazer um JOIN de TB_PRODUTO com TB_TIPOPRODUTO */
 -- Resp.:   
 BEGIN TRAN
 
@@ -82,7 +83,7 @@ COMMIT
        de cor 'VERMELHO' para cor 'LARANJA', mas somente os pedidos com data de 
        entrega em Outubro de 2014 */ 
 -- Resp.:      
--- SOLU«√O 1    
+-- SOLU√á√ÉO 1    
 	BEGIN TRAN
 
     UPDATE TB_ITENSPEDIDO 
@@ -93,7 +94,7 @@ COMMIT
           DATA_ENTREGA BETWEEN '2014.10.1' AND '2014.10.31';      
      
     ROLLBACK
--- SOLU«√O 2
+-- SOLU√á√ÉO 2
 	BEGIN TRAN
 
     UPDATE TB_ITENSPEDIDO 
@@ -104,8 +105,7 @@ COMMIT
           I.DATA_ENTREGA BETWEEN '2014.10.1' AND '2014.10.31';   
      
     ROLLBACK
-       
-    
+        
 /* 9. Alterar o campo ICMS para 12 da tabela TB_CLIENTE para clientes dos
       estados RJ, RO, AC, RR, MG, PR, SC, RS, MS e MT */
 -- Resp.:      
@@ -119,16 +119,16 @@ UPDATE TB_CLIENTE SET ICMS = 18
 WHERE ESTADO = 'SP';
 
 /* 11. Alterar o campo ICMS para 7 da tabela TB_CLIENTE para clientes que
---     N√O SEJAM dos estados RJ, RO, AC, RR, MG, PR, SC, RS, MS, MT e SP */
+--     N√ÉO SEJAM dos estados RJ, RO, AC, RR, MG, PR, SC, RS, MS, MT e SP */
 -- Resp.:
 UPDATE TB_CLIENTE SET ICMS = 7
 WHERE ESTADO NOT IN ('RJ', 'RO', 'AC', 'RR', 'MG', 'PR', 'SC', 
                      'RS', 'MS', 'MT', 'SP');
  
 /* 12. Criar a tabela ESTADOS com os campos
-     COD_ESTADO 	inteiro, autonumeraÁ„o e chave prim·ria
+     COD_ESTADO 	inteiro, autonumera√ß√£o e chave prim√°ria
      SIGLA 		Char(2)
-     ICMS 		numÈrico, tamanho 4 com 2 decimais
+     ICMS 		num√©rico, tamanho 4 com 2 decimais
 */
 -- Resp.:
 CREATE TABLE ESTADOS
@@ -141,7 +141,7 @@ SELECT DISTINCT ESTADO, ICMS FROM TB_CLIENTE
 WHERE ESTADO IS NOT NULL
 */
 -- Obs.: Este SELECT deve retornar 21 linhas e sem repetir estado
--- Se der diferente È porque seus UPDATES de ICMS est„o errados
+-- Se der diferente √© porque seus UPDATES de ICMS est√£o errados
 -- Resp.:
 INSERT INTO ESTADOS ( SIGLA, ICMS )
 SELECT DISTINCT ESTADO, ICMS FROM TB_CLIENTE
@@ -150,7 +150,7 @@ WHERE ESTADO IS NOT NULL;
 -- 14. Criar o campo COD_ESTADO na tabela TB_CLIENTE
 ALTER TABLE TB_CLIENTE ADD COD_ESTADO INT;
 
-/* 15. Copiar para TB_CLIENTE.COD_ESTADO o cÛdigo do estado gerado na tabela ESTADOS */
+/* 15. Copiar para TB_CLIENTE.COD_ESTADO o c√≥digo do estado gerado na tabela ESTADOS */
 -- Resp.:
 ---- COM SUB-QUERY
 BEGIN TRAN
