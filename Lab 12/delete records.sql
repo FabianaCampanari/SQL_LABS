@@ -1,3 +1,4 @@
+
 USE Consorcio;
 
 -- visualizando dados da tabela carteira
