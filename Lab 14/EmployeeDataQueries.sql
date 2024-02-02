@@ -16,12 +16,12 @@ SELECT idDepartamento,idMatricula,NomeFuncionario,Admissao,Salario
 FROM Funcionario
 ORDER BY Salario DESC;
 
--- OrdenaÁ„o por mais de uma coluna
+-- Ordena√ß√£o por mais de uma coluna
 SELECT idDepartamento,idMatricula,NomeFuncionario,Admissao,Salario
 FROM Funcionario
 ORDER BY idDepartamento ASC,Salario DESC;
 
--- Ordenar pela posiÁ„o da coluna
+-- Ordenar pela posi√ß√£o da coluna
 SELECT idDepartamento,idMatricula,NomeFuncionario,Admissao,Salario
 FROM Funcionario
 ORDER BY 1 ASC,5 DESC;
@@ -35,7 +35,7 @@ FROM Funcionario;
 SELECT TOP 10 PERCENT idDepartamento,idMatricula,NomeFuncionario,Admissao,Salario
 FROM Funcionario;
 
--- 10 Maiores Sal·rios
+-- 10 Maiores Sal√°rios
 SELECT TOP 9 idDepartamento,idMatricula,NomeFuncionario,Admissao,Salario
 FROM Funcionario
 ORDER BY Salario DESC;
@@ -45,8 +45,7 @@ SELECT TOP 9 WITH TIES idDepartamento,idMatricula,NomeFuncionario,Admissao,Salar
 FROM Funcionario
 ORDER BY Salario DESC;
 
-
--- Retornar 5 funcion·rios mais antigos
+-- Retornar 5 funcion√°rios mais antigos
 SELECT TOP 5 WITH TIES idDepartamento,idMatricula,NomeFuncionario,Admissao,Salario
 FROM Funcionario
 ORDER BY Admissao ASC;
