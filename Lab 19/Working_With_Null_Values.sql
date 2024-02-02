@@ -1,3 +1,4 @@
+
 USE SysConVendas;
 SELECT * FROM Dados;
 
@@ -7,16 +8,16 @@ BEGIN TRAN
 	WHERE Pedido IN(21820,21872,21924,21963,22080)
 COMMIT
 
--- Função ISNULL
+-- FunÃ§Ã£o ISNULL
 SELECT
-	Pedido,ISNULL(Vendedor,'Sem Informação') AS Vendedor,Produto,Total
+	Pedido,ISNULL(Vendedor,'Sem InformaÃ§Ã£o') AS Vendedor,Produto,Total
 FROM Dados;
 
 SELECT
 	Pedido,ISNULL(Vendedor,'') AS Vendedor,Produto,Total
 FROM Dados;
 
--- Filtrar Nulos e Não Nulos
+-- Filtrar Nulos e NÃ£o Nulos
 SELECT
 	Pedido,Vendedor,Produto,Total
 FROM Dados
@@ -48,7 +49,7 @@ SELECT * FROM Cotacao;
 
 SELECT
 	Produto,
-	COALESCE(cotacao1,cotacao2,cotacao3,0) AS Cotação
+	COALESCE(cotacao1,cotacao2,cotacao3,0) AS CotaÃ§Ã£o
 FROM Cotacao;
 
 SELECT * FROM Cotacao
