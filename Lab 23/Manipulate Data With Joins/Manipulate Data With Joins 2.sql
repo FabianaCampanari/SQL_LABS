@@ -1,6 +1,7 @@
+
 USE SisDep;
 
--- Bônus de R$ 100,00 para todos os funcionários que possuam dependentes
+-- BÃ´nus de R$ 100,00 para todos os funcionÃ¡rios que possuam dependentes
 BEGIN TRAN
 	UPDATE Funcionario
 	SET Salario = Salario + 100
@@ -10,7 +11,7 @@ BEGIN TRAN
 ROLLBACK
 COMMIT
 
--- Reajuste de 10% no salário para funcionários que não possuam dependentes
+-- Reajuste de 10% no salÃ¡rio para funcionÃ¡rios que nÃ£o possuam dependentes
 
 SELECT
 	F.NomeFuncionario,D.NomeDependente
@@ -28,7 +29,7 @@ BEGIN TRAN
 ROLLBACK -- DESFAZER
 COMMIT -- CONFIRMAR
 
--- Desligamento de funcionários do depto SAC com salário acima de R$ 1.500,00
+-- Desligamento de funcionÃ¡rios do depto SAC com salÃ¡rio acima de R$ 1.500,00
 
 BEGIN TRAN
 	DELETE Funcionario
@@ -38,8 +39,8 @@ BEGIN TRAN
 
 COMMIT
 
--- Desligamento de funcionários com salário superior a R$ 4.000,00
--- que NÃO possuam dependentes
+-- Desligamento de funcionÃ¡rios com salÃ¡rio superior a R$ 4.000,00
+-- que NÃƒO possuam dependentes
 
 BEGIN TRAN
 	DELETE Funcionario
