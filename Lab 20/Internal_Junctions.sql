@@ -1,10 +1,10 @@
+
 USE SisDep;
 
 SELECT
 	NomeFuncionario,Admissao,Salario,uf,Cidade
 FROM Funcionario INNER JOIN Localidade
 ON Funcionario.idLocalidade = Localidade.idLocalidade;
-
 
 SELECT
 	NomeFuncionario,NomeDepartamento,Admissao,Salario,uf,Cidade
@@ -24,7 +24,7 @@ ON Dependente.idMatricula = Funcionario.idMatricula
 ORDER BY Funcionario.NomeFuncionario;
 
 
--- Rótulos ou Alias
+-- RÃ³tulos ou Alias
 SELECT
 	F.NomeFuncionario,
 	D.NomeDependente,
