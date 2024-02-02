@@ -23,7 +23,6 @@ FROM Funcionario INNER JOIN Dependente
 ON Dependente.idMatricula = Funcionario.idMatricula
 ORDER BY Funcionario.NomeFuncionario;
 
-
 -- Rótulos ou Alias
 SELECT
 	F.NomeFuncionario,
