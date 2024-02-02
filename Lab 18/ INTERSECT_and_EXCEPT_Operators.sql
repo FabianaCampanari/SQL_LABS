@@ -1,8 +1,8 @@
+
 USE Clientes;
 
 SELECT * FROM Clientes2015;
 SELECT * FROM Clientes2016;
-
 
 -- Clientes Mantidos
 SELECT Cliente FROM Clientes2015
