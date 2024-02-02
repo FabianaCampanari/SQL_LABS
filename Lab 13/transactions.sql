@@ -1,3 +1,4 @@
+
 USE SeguroVeiculo;
 SELECT * FROM Apolices;
 
