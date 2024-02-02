@@ -1,4 +1,6 @@
+
 USE Concessionaria;
+
 
 -- Tabelas
 CREATE TABLE tblMarcas
@@ -6,6 +8,8 @@ CREATE TABLE tblMarcas
 	idMarca			int				identity		primary key,
 	nomeMarca		nchar(10)		not null		unique
 );
+
+
 
 
 -- Visualizando estrutura de tabelas
