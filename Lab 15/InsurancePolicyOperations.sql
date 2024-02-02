@@ -1,3 +1,4 @@
+
 Use SeguroVeiculo;
 
 SELECT * FROM Apolices;
@@ -6,7 +7,7 @@ SELECT * FROM Apolices;
 SELECT * FROM Apolices
 WHERE valorApolice >= 50000;
 
--- Operadores Lógicos
+-- Operadores LÃ³gicos
 SELECT * FROM Apolices
 WHERE idSeguradora = 1 OR idSeguradora = 3;
 
@@ -21,7 +22,7 @@ SELECT * FROM Apolices
 WHERE valorApolice >= 30000
 ORDER BY valorApolice DESC;
 
--- Operadores Aritiméticos
+-- Operadores AritimÃ©ticos
 SELECT nContrato,valorApolice,valorApolice * 1.1 AS [Reajuste Anual]
 FROM Apolices;
 
