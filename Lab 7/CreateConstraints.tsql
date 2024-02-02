@@ -1,3 +1,4 @@
+
 USE Concessionaria;
 
 CREATE TABLE tblEstoque
@@ -22,7 +23,6 @@ CREATE TABLE tblEstoque
 -- Nova Coluna
 ALTER TABLE tblEstoque
 ADD placa nChar(8) not null;
-
 
 -- Alterar o tamanho de uma coluna
 ALTER TABLE tblEstoque
