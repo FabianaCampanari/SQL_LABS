@@ -1,26 +1,30 @@
+
 -- 1. Colocar o banco de dados PEDIDOS em uso
+
 USE PEDIDOS;
--- 2. Aumentar o preÁo de custo de todos os produtos do tipo 2 em 15%
---    Utilize transaÁ„o e a cl·usula OUTPUT para conferir o resultado
+-- 2. Aumentar o pre√ßo de custo de todos os produtos do tipo 2 em 15%
+--    Utilize transa√ß√£o e a cl√°usula OUTPUT para conferir o resultado
 -- Resposta:
--- Abrir transaÁ„o
+-- Abrir transa√ß√£o
+
 BEGIN TRAN
 -- Executar o UPDATE
-UPDATE TB_PRODUTO SET PRECO_CUSTO = PRECO_CUSTO * 1.15
+	UPDATE TB_PRODUTO SET PRECO_CUSTO = PRECO_CUSTO * 1.15
 OUTPUT INSERTED.COD_PRODUTO, INSERTED.DESCRICAO, INSERTED.COD_TIPO,
        DELETED.PRECO_CUSTO AS PRECO_ANTIGO, INSERTED.PRECO_CUSTO AS PRECO_NOVO,
 	   INSERTED.PRECO_CUSTO / DELETED.PRECO_CUSTO AS FATOR 
 WHERE COD_TIPO = 2;
--- Verificar se deu certo analisando o resultado do comando
 
--- Obs.: Como o campo PRECO_CUSTO tem 4 casas depois da vÌrgula,
---       a coluna calculada FATOR n„o ser· exatamente 1.15, mas prÛximo disso
--- Ok. AlteraÁ„o correta
+-- Verificar se deu certo analisando o resultado do comando
+-- Obs.: Como o campo PRECO_CUSTO tem 4 casas depois da v√≠rgula,
+--       a coluna calculada FATOR n√£o ser√° exatamente 1.15, mas pr√≥ximo disso
+-- Ok. Altera√ß√£o correta
+
 COMMIT
 
--- 3. Fazer com que os preÁos de venda dos produtos do 
--- tipo 2 fiquem 30% acima do preÁo de custo
--- Utilize transaÁ„o e a cl·usula OUTPUT para conferir o resultado
+-- 3. Fazer com que os pre√ßos de venda dos produtos do 
+-- tipo 2 fiquem 30% acima do pre√ßo de custo
+-- Utilize transa√ß√£o e a cl√°usula OUTPUT para conferir o resultado
 -- Resposta:
 BEGIN TRAN
 
@@ -30,10 +34,12 @@ OUTPUT INSERTED.COD_PRODUTO, INSERTED.DESCRICAO, INSERTED.COD_TIPO,
 WHERE COD_TIPO = 2;
 
 COMMIT
+	
 -- 4. Alterar o campo IPI de todos os produtos com 
 --    COD_TIPO = 3 para 5%
--- Utilize transaÁ„o e a cl·usula OUTPUT para conferir o resultado
+-- Utilize transa√ß√£o e a cl√°usula OUTPUT para conferir o resultado
 -- Resposta:
+	
 BEGIN TRAN
 
 UPDATE TB_PRODUTO SET IPI = 5 
@@ -44,7 +50,7 @@ WHERE COD_TIPO = 3;
 COMMIT
 -- 5. Reduzir em 10% (multiplicar QTD_MINIMA por 0.9) o campo 
 -- QTD_MINIMA de todos os produtos 
--- Utilize transaÁ„o e a cl·usula OUTPUT para conferir o resultado
+-- Utilize transa√ß√£o e a cl√°usula OUTPUT para conferir o resultado
 -- Resposta:
 BEGIN TRAN
 
@@ -53,16 +59,20 @@ OUTPUT INSERTED.COD_PRODUTO, DELETED.QTD_MINIMA AS QTD_ANTIGA,
        INSERTED.QTD_MINIMA AS QTD_NOVA;
 
 COMMIT
--- 6. Alterar os seguintes campos do cliente de cÛdigo 11
--- Utilize transaÁ„o e a cl·usula OUTPUT para conferir o resultado
+	
+-- 6. Alterar os seguintes campos do cliente de c√≥digo 11
+-- Utilize transa√ß√£o e a cl√°usula OUTPUT para conferir o resultado
 /*
-	ENDERE«O: AV. CELSO GARCIA, 1234
+	ENDERE√áO: AV. CELSO GARCIA, 1234
 	BAIRRO:   TATUAPE
 	CIDADE:   SAO PAULO
 	ESTADO:   SP 
 	CEP   :   03407080 
 */
+
+	
 -- Resposta:
+	
 BEGIN TRAN
 
 UPDATE TB_CLIENTE
@@ -76,9 +86,9 @@ WHERE CODCLI = 11;
 
 COMMIT 
 -- 7. Copiar ENDERECO, BAIRRO, CIDADE, ESTADO e CEP do 
--- cliente cÛdigo 13 para os campos 
+-- cliente c√≥digo 13 para os campos 
 --  END_COB, BAI_COB, CID_COB, EST_COB e CEP_COB (do mesmo cliente)
--- Utilize transaÁ„o e a cl·usula OUTPUT para conferir o resultado
+-- Utilize transa√ß√£o e a cl√°usula OUTPUT para conferir o resultado
 -- Resposta:
 BEGIN TRAN
 
@@ -94,7 +104,7 @@ WHERE CODCLI = 13;
 COMMIT
 -- 8. Alterar o campo ICMS para 12 da tabela TB_CLIENTE para os clientes dos
 --    estados RJ, RO, AC, RR, MG, PR, SC, RS, MS, MT
--- Utilize transaÁ„o e a cl·usula OUTPUT para conferir o resultado
+-- Utilize transa√ß√£o e a cl√°usula OUTPUT para conferir o resultado
 -- Resposta:
 BEGIN TRAN
 
@@ -104,7 +114,7 @@ WHERE ESTADO IN ('RJ', 'RO', 'AC', 'RR', 'MG', 'PR', 'SC', 'RS', 'MS', 'MT');
 
 COMMIT
 -- 9. Alterar o campos ICMS para 18 de todos os clientes de SP
--- Utilize transaÁ„o e a cl·usula OUTPUT para conferir o resultado
+-- Utilize transa√ß√£o e a cl√°usula OUTPUT para conferir o resultado
 -- Resposta:
 BEGIN TRAN
 
@@ -114,8 +124,8 @@ WHERE ESTADO = 'SP';
 
 COMMIT
 -- 10. Alterar o campo ICMS para 7 da tabela TB_CLIENTE para clientes que
---    N√O SEJAM dos estados RJ, RO, AC, RR, MG, PR, SC, RS, MS, MT, SP
--- Utilize transaÁ„o e a cl·usula OUTPUT para conferir o resultado
+--    N√ÉO SEJAM dos estados RJ, RO, AC, RR, MG, PR, SC, RS, MS, MT, SP
+-- Utilize transa√ß√£o e a cl√°usula OUTPUT para conferir o resultado
 -- Resposta:
 BEGIN TRAN
 
@@ -133,7 +143,7 @@ COMMIT
 -- mas somente dos itens do produto com ID_PRODUTO = 8 com 
 -- data de entrega em janeiro de 2014 e com 
 -- QUANTIDADE acima de 1000.
--- Utilize transaÁ„o e a cl·usula OUTPUT para conferir o resultado
+-- Utilize transa√ß√£o e a cl√°usula OUTPUT para conferir o resultado
 -- Resposta:
 BEGIN TRAN
 
@@ -147,7 +157,7 @@ COMMIT
 -- 12. Zerar o campo DESCONTO de todos os itens de pedido 
 -- com quantidade abaixo de 1000, com data de entrega 
 -- posterior a 1-Junho-2014 e que tenham desconto acima de zero.
--- Utilize transaÁ„o e a cl·usula OUTPUT para conferir o resultado
+-- Utilize transa√ß√£o e a cl√°usula OUTPUT para conferir o resultado
 -- Resposta:
 BEGIN TRAN
 
@@ -157,11 +167,11 @@ WHERE DATA_ENTREGA > '2014.6.1' AND QUANTIDADE < 1000 AND
       DESCONTO > 0;
 
 COMMIT
--- 13. Usando SELECT INTO gere uma cÛpia da tabela VENDEDORES
+-- 13. Usando SELECT INTO gere uma c√≥pia da tabela VENDEDORES
 SELECT * INTO VENDEDORES_TMP FROM TB_VENDEDOR;
 
 -- 14. Exclua de VENDEDORES_TMP os registros com CODVEN acima de 5
--- Utilize transaÁ„o e a cl·usula OUTPUT para conferir o resultado
+-- Utilize transa√ß√£o e a cl√°usula OUTPUT para conferir o resultado
 -- Resposta:
 BEGIN TRAN 
 
@@ -170,13 +180,13 @@ OUTPUT DELETED.*
 WHERE CODVEN > 5;
 
 COMMIT
--- 15. Utilizando o comando SELECT...INTO, faÁa uma cÛpia da tabela TB_PEDIDO
+-- 15. Utilizando o comando SELECT...INTO, fa√ßa uma c√≥pia da tabela TB_PEDIDO
 --     chamada COPIA_PEDIDOS
 -- Resposta:
 SELECT * INTO COPIA_PEDIDOS FROM TB_PEDIDO;
 
--- 16. Exclua os registros da tabela COPIA_PEDIDOS que sejam  do vendedor cÛdigo 2
--- Utilize transaÁ„o e a cl·usula OUTPUT para conferir o resultado
+-- 16. Exclua os registros da tabela COPIA_PEDIDOS que sejam  do vendedor c√≥digo 2
+-- Utilize transa√ß√£o e a cl√°usula OUTPUT para conferir o resultado
 -- Resposta:
 BEGIN TRAN
 
@@ -187,7 +197,7 @@ WHERE CODVEN = 2;
 COMMIT
 -- 17. Exclua os registros da tabela COPIA_PEDIDOS que sejam 
 -- do primeiro semestre de 2014
--- Utilize transaÁ„o e a cl·usula OUTPUT para conferir o resultado
+-- Utilize transa√ß√£o e a cl√°usula OUTPUT para conferir o resultado
 -- Resposta:
 BEGIN TRAN
 
