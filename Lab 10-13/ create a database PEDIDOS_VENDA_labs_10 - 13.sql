@@ -1,3 +1,4 @@
+
 -- 1.	Criar um banco de dados chamado PEDIDOS_VENDA:
 
 CREATE DATABASE PEDIDOS_VENDA;
@@ -20,6 +21,7 @@ USE PEDIDOS_VENDA;
 	Fotografia			binário longo
 */
 
+
 CREATE TABLE TB_PRODUTO
 (	COD_PRODUTO		INT	IDENTITY	PRIMARY KEY,
 	DESCRICAO		VARCHAR(50),
@@ -32,11 +34,13 @@ CREATE TABLE TB_PRODUTO
 	CARACTERISTICAS	VARCHAR(max),
 	FOTO			VARBINARY(max)	);
 
+
 -- 3.	Criar a tabela TB_UNIDADE para armazenar as unidades de medida:
 /*
 	Código da unidade		inteiro, autonumeração e chave primária
 	Nome da unidade			alfanumérico
 */
+
 
 CREATE TABLE TB_UNIDADE
 (	COD_UNIDADE		INT	IDENTITY	PRIMARY KEY,
@@ -46,6 +50,7 @@ CREATE TABLE TB_UNIDADE
 /*
 PEÇAS, METROS, QUILOGRAMAS, DÚZIAS, PACOTE, CAIXA
 */
+
 
 INSERT INTO TB_UNIDADE (UNIDADE)
 VALUES ('PEÇAS'), ('METROS'), ('QUILOGRAMAS'), ('DÚZIAS'), ('PACOTE'), ('CAIXA');
@@ -57,19 +62,24 @@ VALUES ('PEÇAS'), ('METROS'), ('QUILOGRAMAS'), ('DÚZIAS'), ('PACOTE'), ('CAIXA
 	Nome da categoria		alfanumérico
 */
 
+
 CREATE TABLE TB_CATEGORIA
 (	COD_CATEGORIA	INT	IDENTITY	PRIMARY KEY,
 	CATEGORIA		VARCHAR(30) );
+
 
 -- 6. Inserir na tabela as seguintes categorias:
 /*
 MOUSE, PEN-DRIVE, MONITOR DE VIDEO, TECLADO, CPU, CABO DE REDE
 */
 
+
 INSERT INTO TB_CATEGORIA
 VALUES ('MOUSE'), ('PEN-DRIVE'), ('MONITOR DE VIDEO'), ('TECLADO'), ('CPU'), ('CABO DE REDE');
 
+
 -- 7.Inserir os produtos a seguir utilizando a cláusula OUTPUT:
+
 
 INSERT INTO TB_PRODUTO
 (DESCRICAO	,COD_UNIDADE,COD_CATEGORIA,QTD_ESTOQUE,QTD_MINIMA,PRECO_CUSTO,PRECO_VENDA )
