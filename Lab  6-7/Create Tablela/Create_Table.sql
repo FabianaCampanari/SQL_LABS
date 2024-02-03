@@ -1,3 +1,4 @@
+
 USE Concessionaria;
 
 -- Tabelas
@@ -7,8 +8,10 @@ CREATE TABLE tblMarcas
 	nomeMarca		nchar(10)		not null		unique
 );
 
+
 -- Visualizando estrutura de tabelas
 EXEC sp_help tblMarcas;
+
 
 
 CREATE TABLE tblModelos
