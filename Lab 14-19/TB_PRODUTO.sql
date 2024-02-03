@@ -1,3 +1,5 @@
+
+
 /* 1.Usar o banco de dados PEDIDOS */
 USE PEDIDOS;
 
@@ -9,7 +11,7 @@ EXEC SP_HELP TB_PRODUTO;
 
 /* 2.Listar TB_PRODUTO mostrando COD_PRODUTO, DESCRICAO,
      PRECO_CUSTO, PRECO_VENDA e calculando 
-     o lucro unit·rio */
+     o lucro unit√°rio */
 SELECT 
    COD_PRODUTO, DESCRICAO, PRECO_CUSTO, PRECO_VENDA,
    PRECO_VENDA - PRECO_CUSTO AS LUCRO_UNITARIO
@@ -41,8 +43,8 @@ SELECT
 FROM TB_PRODUTO;
 
 /* 6.Listar COD_PRODUTO, DESCRICAO, PRECO_CUSTO, 
-     PRECO_VENDA e lucro unit·rio em reais 
-     (PRECO_VENDA ñ PRECO_CUSTO) e percentual de lucro
+     PRECO_VENDA e lucro unit√°rio em reais 
+     (PRECO_VENDA ‚Äì PRECO_CUSTO) e percentual de lucro
     (100 * (PRECO_VENDA - PRECO_CUSTO) / PRECO_CUSTO) */
 SELECT
   COD_PRODUTO, DESCRICAO, PRECO_CUSTO, PRECO_VENDA,
