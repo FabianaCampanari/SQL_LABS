@@ -1,3 +1,4 @@
+
 USE Concessionaria;
 
 CREATE TABLE tblEstoque
