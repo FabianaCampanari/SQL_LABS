@@ -52,6 +52,7 @@ COMMIT
 -- QTD_MINIMA de todos os produtos 
 -- Utilize transação e a cláusula OUTPUT para conferir o resultado
 -- Resposta:
+	
 BEGIN TRAN
 
 UPDATE TB_PRODUTO SET QTD_MINIMA *= 0.9
@@ -62,6 +63,8 @@ COMMIT
 	
 -- 6. Alterar os seguintes campos do cliente de código 11
 -- Utilize transação e a cláusula OUTPUT para conferir o resultado
+
+	
 /*
 	ENDEREÇO: AV. CELSO GARCIA, 1234
 	BAIRRO:   TATUAPE
