@@ -12,7 +12,6 @@ ROLLBACK
 COMMIT
 
 -- Reajuste de 10% no salário para funcionários que não possuam dependentes
-
 SELECT
 	F.NomeFuncionario,D.NomeDependente
 FROM Funcionario AS F LEFT JOIN Dependente AS D
@@ -30,7 +29,6 @@ ROLLBACK -- DESFAZER
 COMMIT -- CONFIRMAR
 
 -- Desligamento de funcionários do depto SAC com salário acima de R$ 1.500,00
-
 BEGIN TRAN
 	DELETE Funcionario
 	FROM Funcionario AS F INNER JOIN Depto AS D
