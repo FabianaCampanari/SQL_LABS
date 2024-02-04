@@ -1,4 +1,5 @@
---Caso a tabela n„o tenha sido criada
+
+--Caso a tabela n√£o tenha sido criada
 CREATE TABLE TB_ALUNO
 (	COD_ALUNO			INT IDENTITY PRIMARY KEY,
 	NOME				VARCHAR(30),
@@ -21,26 +22,24 @@ VALUES
  '23456789','23459876','', '998765432',
  'ANALISTA DE SISTEMAS', 'IMPACTA TECNOLOGIA');
 
+
 -- Consultar os dados inseridos na tabela
 SELECT * FROM TB_ALUNO;
-
-
 
 INSERT INTO TB_ALUNO
 (NOME, DATA_NASCIMENTO, IDADE, E_MAIL, 
 FONE_RES, FONE_COM, FAX, CELULAR, PROFISSAO, EMPRESA)
 VALUES
-('AndrÈ da Silva', '1980.1.2', 33, 'andre@silva.com', 
+('Andr√© da Silva', '1980.1.2', 33, 'andre@silva.com', 
  '23456789','23459876','', '998765432',
- 'ANALISTA DE SISTEMAS', 'SOMA INFORM¡TICA'),
+ 'ANALISTA DE SISTEMAS', 'SOMA INFORM√ÅTICA'),
  ('Marcelo Soares', '1983.4.21', 30, 'marcelo@soares.com', 
  '23456789','23459876','', '998765432',
  'INSTRUTOR', 'IMPACTA TECNOLOGIA');
 
+
 -- Consultar os dados da tabela
 SELECT * FROM TB_ALUNO;
-
-
 
 CREATE TABLE ALUNOS2
  (	NUM_ALUNO			INT,
@@ -63,8 +62,8 @@ INSERT INTO TB_ALUNO
 VALUES
 ('MARIA LUIZA', '1997.10.29', 15, 'luiza@luiza.com', 
  '23456789','23459876','', '998765432',
- 'ESTUDANTE', 'COL…GIO MONTE VIDEL');
- 
+ 'ESTUDANTE', 'COL√âGIO MONTE VIDEL');
+
  -- Consultando os dados
 SELECT * FROM TB_ALUNO;
 
@@ -75,7 +74,7 @@ INSERT INTO TB_ALUNO
 VALUES
 ('PEDRO PAULO', '1994.2.5', 19, 'pedro@pedro.com', 
  '23456789','23459876','', '998765432',
- 'ESTUDANTE', 'COL…GIO MONTE VIDEL');
+ 'ESTUDANTE', 'COL√âGIO MONTE VIDEL');
 
 -- Consultando os dados
 SELECT * FROM TB_ALUNO;
@@ -129,20 +128,20 @@ SELECT CODFUN, NOME, COD_DEPTO, COD_CARGO, SALARIO
 FROM TB_EMPREGADO WHERE COD_DEPTO = 2;
 GO
 
--- Declarar vari·vel tabular
+-- Declarar vari√°vel tabular
 DECLARE @REG_INSERT TABLE ( 	CODFUN    INT,
 					NOME      VARCHAR(30),
 					COD_DEPTO INT,
 					COD_CARGO	INT,
 					SALARIO	NUMERIC(10,2) );
 
--- Inserir dados e armazenar em vari·vel tabular
+-- Inserir dados e armazenar em vari√°vel tabular
 INSERT INTO EMP_TEMP 
 OUTPUT INSERTED.* INTO @REG_INSERT
 SELECT CODFUN, NOME, COD_DEPTO, COD_CARGO, SALARIO
 FROM TB_EMPREGADO WHERE COD_DEPTO = 3;
 
---Para exibir os registros inseridos, utilizamos a seguinte instruÁ„o:
+--Para exibir os registros inseridos, utilizamos a seguinte instru√ß√£o:
 
 SELECT * FROM @REG_INSERT;
 
