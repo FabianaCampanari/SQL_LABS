@@ -1,3 +1,4 @@
+
 USE PEDIDOS;
 
 SELECT 	TB_EMPREGADO.CODFUN, TB_EMPREGADO.NOME, 
@@ -27,6 +28,7 @@ FROM TB_EMPREGADO AS E JOIN TB_DEPARTAMENTO AS D
      ON E.COD_DEPTO = D.COD_DEPTO;
 
 -- OU
+
 SELECT E.CODFUN, E.NOME, D.DEPTO
 FROM TB_EMPREGADO E JOIN TB_DEPARTAMENTO D
      ON E.COD_DEPTO = D.COD_DEPTO;
@@ -38,38 +40,41 @@ FROM TB_EMPREGADS E
   JOIN TB_DEPARTAMENTO D ON E.COD_DEPTO = D.COD_DEPTO;
 
 
----Mensagem 208, NÌvel 16, Estado 1, Linha 1
+---Mensagem 208, N√≠vel 16, Estado 1, Linha 1
 --Invalid object name 'EMPREGADS'
 
 
 -- TB_EMPREGADO e TB_CARGO (cargos)
+
 SELECT E.CODFUN, E.NOME, C.CARGO
 FROM TB_EMPREGADO E JOIN TB_CARGO C ON E.COD_CARGO = C.COD_CARGO;
+
 -- OU
+
 SELECT E.CODFUN, E.NOME, C.CARGO
 FROM TB_CARGO C JOIN TB_EMPREGADO E ON E.COD_CARGO = C.COD_CARGO;
 
-
-
 -- Consultar 3 tabelas
+
 SELECT  
   E.CODFUN, E.NOME, E.COD_DEPTO, E.COD_CARGO, D.DEPTO, C.CARGO
 FROM TB_EMPREGADO E
   JOIN TB_DEPARTAMENTO D ON E.COD_DEPTO = D.COD_DEPTO
   JOIN TB_CARGO C ON E.COD_CARGO = C.COD_CARGO;
+
 -- OU
 SELECT  
   E.CODFUN, E.NOME, E.COD_DEPTO, E.COD_CARGO, D.DEPTO, C.CARGO
 FROM TB_DEPARTAMENTO D
   JOIN TB_EMPREGADO E ON E.COD_DEPTO = D.COD_DEPTO
   JOIN TB_CARGO C  ON E.COD_CARGO = C.COD_CARGO;
+
 -- OU
 SELECT  
   E.CODFUN, E.NOME, E.COD_DEPTO, E.COD_CARGO, D.DEPTO, C.CARGO
 FROM TB_CARGO C
   JOIN TB_EMPREGADO E ON E.COD_CARGO = C.COD_CARGO
   JOIN TB_DEPARTAMENTO D  ON E.COD_DEPTO = D.COD_DEPTO;
-
 
 SELECT  
   E.CODFUN, E.NOME, E.COD_DEPTO, E.COD_CARGO, D.DEPTO, C.CARGO
@@ -93,6 +98,7 @@ FROM TB_CARGO C
       
       Filtrando pedidos emitidos em Janeiro de 2014
 */
+
 SELECT
    I.NUM_PEDIDO, I.NUM_ITEM, I.COD_PRODUTO, PR.DESCRICAO,
    I.QUANTIDADE, I.PR_UNITARIO, T.TIPO, U.UNIDADE, CR.COR,
@@ -105,33 +111,34 @@ FROM TB_ITENSPEDIDO I
    JOIN TB_PEDIDO PE    ON I.NUM_PEDIDO   = PE.NUM_PEDIDO     
 WHERE PE.DATA_EMISSAO BETWEEN '2014.1.1' AND '2014.1.31';  
 
-
 SELECT E.CODFUN, E.NOME AS FUNCIONARIO, S.NOME AS SUPERVISOR
 FROM TB_EMPREGADO E JOIN TB_EMPREGADO S 
      ON E.COD_SUPERVISOR = S.CODFUN;
 
-
 -- INNER JOIN
+
 SELECT * FROM TB_EMPREGADO; -- retorna 61 linhas
 --
 SELECT  -- retorna 58 linhas
   E.CODFUN, E.NOME, E.COD_DEPTO, E.COD_CARGO, C.CARGO
 FROM TB_EMPREGADO E
   INNER JOIN TB_CARGO C ON E.COD_CARGO = C.COD_CARGO;
--- OU (a palavra INNER È opcional)
+-- OU (a palavra INNER √© opcional)
 SELECT  -- retorna 58 linhas
   E.CODFUN, E.NOME, E.COD_DEPTO, E.COD_CARGO, C.CARGO
 FROM TB_EMPREGADO E
   JOIN TB_CARGO C ON E.COD_CARGO = C.COD_CARGO;
 
+
 /*
    Existem 61 linhas na tabela TB_EMPREGADO, mas quando fazemos
    INNER JOIN com TB_CARGO, retorna apenas com 58 linhas.
-   A explicaÁ„o para isso È que existem 3 linhas em TB_EMPREGADO
-   com COD_CARGO inv·lido, inexistente em TB_DEPARTAMENTO.
+   A explica√ß√£o para isso √© que existem 3 linhas em TB_EMPREGADO
+   com COD_CARGO inv√°lido, inexistente em TB_DEPARTAMENTO.
 */
 
--- Filtrar somente os registros n„o correspondentes
+-- Filtrar somente os registros n√£o correspondentes
+
 SELECT  -- retorna 3 linhas
   E.CODFUN, E.NOME, E.COD_DEPTO, E.COD_CARGO, C.CARGO
 FROM TB_EMPREGADO E
@@ -141,10 +148,11 @@ WHERE C.COD_CARGO IS NULL;
 SELECT  
   E.CODFUN, E.NOME, E.COD_DEPTO, E.COD_CARGO, D.DEPTO
 FROM TB_EMPREGADO E RIGHT JOIN TB_DEPARTAMENTO D ON E.COD_DEPTO = D.COD_DEPTO;  
--- O resultado ter· 2 departamentos que
--- n„o retornaram dados de TB_EMPREGADO.
+-- O resultado ter√° 2 departamentos que
+-- n√£o retornaram dados de TB_EMPREGADO.
 
--- Filtrar somente os registros n„o correspondentes
+-- Filtrar somente os registros n√£o correspondentes
+
 SELECT  
   E.CODFUN, E.NOME, E.COD_DEPTO, E.COD_CARGO, D.DEPTO
 FROM TB_EMPREGADO E RIGHT JOIN TB_DEPARTAMENTO D ON E.COD_DEPTO = D.COD_DEPTO  
@@ -152,20 +160,22 @@ WHERE E.COD_DEPTO IS NULL;
 
 
 -- FULL JOIN une o LEFT e o RIGHT JOIN
+
 SELECT  
   E.CODFUN, E.NOME, E.COD_DEPTO, E.COD_CARGO, C.CARGO
 FROM TB_EMPREGADO E FULL JOIN TB_CARGO C ON E.COD_CARGO = C.COD_CARGO;  
 -- Observe o resultado e veja que existem 2 departamentos que
--- n„o retornaram dados de TB_EMPREGADO.
+-- n√£o retornaram dados de TB_EMPREGADO.
 
--- Filtrar somente os registros n„o correspondentes
+-- Filtrar somente os registros n√£o correspondentes
+
 SELECT  
   E.CODFUN, E.NOME, E.COD_DEPTO, E.COD_CARGO, C.CARGO
 FROM TB_EMPREGADO E FULL JOIN TB_CARGO C ON E.COD_CARGO = C.COD_CARGO
 WHERE E.COD_CARGO IS NULL OR C.COD_CARGO IS NULL;
 
-
 -- CROSS JOIN
+
 SELECT  -- retorna 854 linhas
   E.CODFUN, E.NOME, E.COD_DEPTO, E.COD_CARGO, D.DEPTO
 FROM TB_EMPREGADO E CROSS JOIN TB_DEPARTAMENTO D;
