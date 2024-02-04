@@ -1,3 +1,4 @@
+
 -- 1.	Criar um banco de dados chamado PEDIDOS_VENDA:
 
 CREATE DATABASE PEDIDOS_VENDA;
@@ -8,17 +9,18 @@ USE PEDIDOS_VENDA;
 
 -- 2.	Criar tabela chamada TB_PRODUTO com os campos:
 /*
-	Código do produto		inteiro, autonumeração e chave primária
-	Nome do produto			alfanumérico
-	Código da unid. de medida	inteiro
-	Código da categoria		inteiro
-	Quantidade em estoque		numérico
-	Quantidade mínima		numérico
-	Preço de custo			numérico
-	Preço de venda			numérico
-	Características técnicas	texto longo
-	Fotografia			binário longo
+	CÃ³digo do produto		inteiro, autonumeraÃ§Ã£o e chave primÃ¡ria
+	Nome do produto			alfanumÃ©rico
+	CÃ³digo da unid. de medida	inteiro
+	CÃ³digo da categoria		inteiro
+	Quantidade em estoque		numÃ©rico
+	Quantidade mÃ­nima		numÃ©rico
+	PreÃ§o de custo			numÃ©rico
+	PreÃ§o de venda			numÃ©rico
+	CaracterÃ­sticas tÃ©cnicas	texto longo
+	Fotografia			binÃ¡rio longo
 */
+
 
 CREATE TABLE TB_PRODUTO
 (	COD_PRODUTO		INT	IDENTITY	PRIMARY KEY,
@@ -32,44 +34,55 @@ CREATE TABLE TB_PRODUTO
 	CARACTERISTICAS	VARCHAR(max),
 	FOTO			VARBINARY(max)	);
 
+
 -- 3.	Criar a tabela TB_UNIDADE para armazenar as unidades de medida:
 /*
-	Código da unidade		inteiro, autonumeração e chave primária
-	Nome da unidade			alfanumérico
+	CÃ³digo da unidade		inteiro, autonumeraÃ§Ã£o e chave primÃ¡ria
+	Nome da unidade			alfanumÃ©rico
 */
+
+
 
 CREATE TABLE TB_UNIDADE
 (	COD_UNIDADE		INT	IDENTITY	PRIMARY KEY,
 	UNIDADE			VARCHAR(30) );
 
+
+
 -- 4. Inserir na tabela as seguintes unidades:
 /*
-PEÇAS, METROS, QUILOGRAMAS, DÚZIAS, PACOTE, CAIXA
+PEÃ‡AS, METROS, QUILOGRAMAS, DÃšZIAS, PACOTE, CAIXA
 */
 
+
+
 INSERT INTO TB_UNIDADE (UNIDADE)
-VALUES ('PEÇAS'), ('METROS'), ('QUILOGRAMAS'), ('DÚZIAS'), ('PACOTE'), ('CAIXA');
+VALUES ('PEÃ‡AS'), ('METROS'), ('QUILOGRAMAS'), ('DÃšZIAS'), ('PACOTE'), ('CAIXA');
 
 
 -- 5.	Criar a tabela TB_CATEGORIA para armazenar as categorias de produto:
 /*
-	Código da categoria		inteiro, autonumeração e chave primária
-	Nome da categoria		alfanumérico
+	CÃ³digo da categoria		inteiro, autonumeraÃ§Ã£o e chave primÃ¡ria
+	Nome da categoria		alfanumÃ©rico
 */
+
 
 CREATE TABLE TB_CATEGORIA
 (	COD_CATEGORIA	INT	IDENTITY	PRIMARY KEY,
 	CATEGORIA		VARCHAR(30) );
+
 
 -- 6. Inserir na tabela as seguintes categorias:
 /*
 MOUSE, PEN-DRIVE, MONITOR DE VIDEO, TECLADO, CPU, CABO DE REDE
 */
 
+
 INSERT INTO TB_CATEGORIA
 VALUES ('MOUSE'), ('PEN-DRIVE'), ('MONITOR DE VIDEO'), ('TECLADO'), ('CPU'), ('CABO DE REDE');
 
--- 7.Inserir os produtos a seguir utilizando a cláusula OUTPUT:
+
+-- 7.Inserir os produtos a seguir utilizando a clÃ¡usula OUTPUT:
 
 INSERT INTO TB_PRODUTO
 (DESCRICAO	,COD_UNIDADE,COD_CATEGORIA,QTD_ESTOQUE,QTD_MINIMA,PRECO_CUSTO,PRECO_VENDA )
@@ -78,5 +91,5 @@ VALUES
 ('Caneta Azul'		, 	1 ,	1 ,	150	,40 	, 0.50	, 0.75),
 ('Caneta Verde'		,	1 ,	1 ,	50	,40	, 0.50	, 0.75),
 ('Caneta Vermelha'	,	1 ,	1 ,	80	,35	, 0.50	, 0.75),
-('Lápis'		,	1 ,	1 ,	400	,80	, 0.50	, 0.80),
-('Régua'		,	1 ,	1 ,	40	,10	, 1.00	, 1.50)
+('LÃ¡pis'		,	1 ,	1 ,	400	,80	, 0.50	, 0.80),
+('RÃ©gua'		,	1 ,	1 ,	40	,10	, 1.00	, 1.50)
