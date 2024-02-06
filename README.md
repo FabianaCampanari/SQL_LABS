@@ -123,9 +123,6 @@ The SQL code below is an example related to a car dealership database. It includ
 <img src="https://github.com/FabianaCampanari/SQL_LABS/assets/113218619/6cc6c6ec-c3a0-45dc-baf8-1ea0f1ca58be" />
 
 
-
-
-
 #
 
-###### <p align="center"> [Copyright 2024 Fabiana Campanari. Code released under the Apache 2.0 license.](https://github.com/FabianaCampanari/SQL_LABS/blob/5a8f935d961852f4801c868033cbdeb53e003b80/LICENSE)
+##### <p align="center"> [Copyright 2024 Fabiana Campanari. Code released under the Apache 2.0 license.](https://github.com/FabianaCampanari/SQL_LABS/blob/5a8f935d961852f4801c868033cbdeb53e003b80/LICENSE)
