@@ -1,4 +1,3 @@
-
 USE SisDep;
 
 -- Bônus de R$ 100,00 para todos os funcionários que possuam dependentes
