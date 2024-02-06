@@ -1,4 +1,3 @@
-
 USE SysConVendas;
 SELECT * FROM DADOS;
 
@@ -9,7 +8,6 @@ SELECT
 FROM Dados
 GROUP BY Cidade;
 
-
 SELECT
 	Produto,Cidade,SUM(TOTAL) AS [Faturamento Total],
 	COUNT(*) AS [N� de Ocorr�ncias]
@@ -17,7 +15,6 @@ FROM Dados
 GROUP BY Cidade,Produto;
 
 -- Filtros em Agrupamento HAVING
-
 SELECT
 	Cidade,SUM(TOTAL) AS [Faturamento Total]
 FROM Dados
@@ -32,7 +29,6 @@ FROM Dados
 GROUP BY Cidade
 WITH ROLLUP
 
-
 SELECT
 	Cidade,Produto,SUM(TOTAL) AS [Faturamento Total]
 FROM Dados
@@ -46,10 +42,10 @@ GROUP BY Cidade,Produto
 WITH CUBE
 
 --------------------------------------------------------------------------
+	
 USE SisDep;
 
 -- Agrupamento com jun��es
-
 SELECT
 	NomeFuncionario,count(*) [N� de Dependentes] 
 FROM Funcionario AS F INNER JOIN Dependente AS D
