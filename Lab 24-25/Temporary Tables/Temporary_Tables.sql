@@ -1,4 +1,5 @@
--- Criando Tabela Tempor·ria Local (modo create table)
+
+-- Criando Tabela Tempor√°ria Local (modo create table)
 CREATE TABLE #Cliente
 (
 	id				int,
@@ -9,17 +10,16 @@ CREATE TABLE #Cliente
 SELECT * FROM #Cliente;
 
 INSERT INTO #Cliente
-VALUES(1,'HÈlio',GETDATE());
+VALUES(1,'H√©lio',GETDATE());
 
--- Criando Tabela Tempor·ria Local (modo insert into)
-
+-- Criando Tabela Tempor√°ria Local (modo insert into)
 USE SisDep;
 
 SELECT * INTO
 #Pesquisa1
 FROM Funcionario;
 
--- Criando Tabela Tempor·ria Global (modo insert into)
+-- Criando Tabela Tempor√°ria Global (modo insert into)
 SELECT * INTO
 ##Pesquisa2
 FROM Funcionario
