@@ -1,3 +1,4 @@
+
 -- Usar banco de dados PEDIDOS
 USE PEDIDOS;
 SELECT * FROM TB_CLIENTE
@@ -9,8 +10,7 @@ SELECT * FROM TB_CLIENTE
 WHERE CODCLI IN (SELECT CODCLI FROM TB_PEDIDO
      WHERE DATA_EMISSAO BETWEEN '2014.1.1' AND '2014.1.31');
 
---No próximo exemplo, é verificada a existência de clientes que não compraram em janeiro de 2014:
-
+--No prÃ³ximo exemplo, Ã© verificada a existÃªncia de clientes que nÃ£o compraram em janeiro de 2014:
 SELECT * FROM TB_CLIENTE
 WHERE NOT EXISTS (SELECT * FROM TB_PEDIDO
    WHERE CODCLI = TB_CLIENTE.CODCLI AND
@@ -22,18 +22,16 @@ WHERE CODCLI NOT IN (SELECT CODCLI FROM TB_PEDIDO
 
  -- Exemplo 1
 
--- Lista de empregados cujo cargo tenha salário inicial
+-- Lista de empregados cujo cargo tenha salÃ¡rio inicial
 -- inferior a 5000                    
 SELECT * FROM TB_EMPREGADO
 WHERE COD_CARGO IN (SELECT COD_CARGO FROM TB_CARGO
                     WHERE SALARIO_INIC < 5000);
 
 
-
 -- Exemplo 2
-
--- Lista de departamentos em que não existe nenhum
--- funcionário cadastrado
+-- Lista de departamentos em que nÃ£o existe nenhum
+-- funcionÃ¡rio cadastrado
 SELECT * FROM TB_DEPARTAMENTO
 WHERE COD_DEPTO NOT IN 
     (SELECT DISTINCT COD_DEPTO FROM TB_EMPREGADO
@@ -45,9 +43,8 @@ FROM TB_EMPREGADO E RIGHT JOIN TB_DEPARTAMENTO D ON E.COD_DEPTO = D.COD_DEPTO
 WHERE E.COD_DEPTO IS NULL
 
 -- Exemplo 3
-
--- Lista de cargos em que não existe nenhum
--- funcionário cadastrado
+-- Lista de cargos em que nÃ£o existe nenhum
+-- funcionÃ¡rio cadastrado
 SELECT * FROM TB_CARGO
 WHERE COD_CARGO NOT IN 
 (SELECT DISTINCT COD_CARGO FROM TB_EMPREGADO
@@ -60,7 +57,7 @@ WHERE E.COD_CARGO IS NULL
 
 
 --	Exemplo 1
--- Funcionário(s) que ganha(m) menos
+-- FuncionÃ¡rio(s) que ganha(m) menos
 SELECT * FROM TB_EMPREGADO
 WHERE SALARIO = (SELECT MIN(SALARIO) FROM TB_EMPREGADO)
 -- o mesmo que
@@ -69,8 +66,7 @@ WHERE SALARIO IS NOT NULL
 ORDER BY SALARIO
 
 -- 	Exemplo 2
-
--- Funcionário mais novo na empresa
+-- FuncionÃ¡rio mais novo na empresa
 SELECT * FROM TB_EMPREGADO
 WHERE DATA_ADMISSAO = 
 (SELECT MAX(DATA_ADMISSAO) FROM TB_EMPREGADO);
@@ -97,7 +93,6 @@ FROM TB_PEDIDO P JOIN TB_VENDEDOR V ON P.CODVEN = V.CODVEN
 WHERE P.DATA_EMISSAO BETWEEN '2014.1.1' AND '2014.1.31'
 GROUP BY P.CODVEN, V.NOME;
 
-
 SELECT COD_DEPTO,
  (SELECT SUM(E.SALARIO) FROM TB_EMPREGADO E
   WHERE E.SINDICALIZADO = 'S' AND 
@@ -120,19 +115,19 @@ AND CODCLI IN (
                                        AND '2013.12.31') 
                 AND ESTADO = 'SP' );
 
--- Tabela temporária 1 - Código da vendedora LEIA
+-- Tabela temporÃ¡ria 1 - CÃ³digo da vendedora LEIA
 SELECT CODVEN INTO #VEND_LEIA FROM TB_VENDEDOR WHERE NOME = 'LEIA';             
 
--- Tabela temporária 2 - Clientes que compraram em Jan/2014
+-- Tabela temporÃ¡ria 2 - Clientes que compraram em Jan/2014
 SELECT CODCLI INTO #CLI_COM_PED_JAN_2014 FROM TB_PEDIDO 
 WHERE DATA_EMISSAO BETWEEN '2014.1.1' AND '2014.1.31';
 
--- Tabela temporária 3 - Clientes que compraram em Dez/2013
+-- Tabela temporÃ¡ria 3 - Clientes que compraram em Dez/2013
 SELECT CODCLI INTO #CLI_COM_PED_DEZ_2013 FROM TB_PEDIDO 
 WHERE DATA_EMISSAO BETWEEN '2013.12.1' AND '2013.12.31';
 
--- Tabela temporária 4 - Clientes de SP que compraram
--- em Dez/2013, mas não compraram em Jan de 2014
+-- Tabela temporÃ¡ria 4 - Clientes de SP que compraram
+-- em Dez/2013, mas nÃ£o compraram em Jan de 2014
 SELECT CODCLI INTO #CLI_FINAL FROM TB_CLIENTE
 WHERE CODCLI NOT IN (SELECT CODCLI FROM #CLI_COM_PED_JAN_2014)
       AND
