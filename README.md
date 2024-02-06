@@ -13,7 +13,7 @@ Here, you will find advanced techniques for the structure of a database system, 
 #
 <br>
 
-## <p align="center"> **This repository covers a variety of topics, including:**
+## **This repository covers a variety of topics, including:**
 
 <br>
 
@@ -97,9 +97,7 @@ Here, you will find advanced techniques for the structure of a database system, 
 - **Joining data:**
 
      - Data union, UNION operator, UNION ALL operator.
- 
- #
-   
+  
 <br>
 
 ## Example of SQL Code
