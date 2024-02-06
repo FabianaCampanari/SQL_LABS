@@ -10,7 +10,6 @@ Here, you will find advanced techniques for the structure of a database system, 
 
  #### <p align="center"> ***< made with vibe, frequency & joy />*** 🪬</p> 
 
-#
 <br>
 
 ## **This repository covers a variety of topics, including:**
