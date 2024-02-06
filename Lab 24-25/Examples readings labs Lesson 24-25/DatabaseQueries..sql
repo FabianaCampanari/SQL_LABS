@@ -1,8 +1,9 @@
+
 -- 1. Colocar em uso o banco de dados CURSOS_INFORMATICA, abrir e executar 
--- os comandos de inserÁ„o dos arquivos.
+-- os comandos de inser√ß√£o dos arquivos.
 USE CURSOS_INFORMATICA;
 
--- 2. Apresentar todas as salas de aula para as quais n„o h· nenhum 
+-- 2. Apresentar todas as salas de aula para as quais n√£o h√° nenhum 
 --    curso marcado
 -- Com JOIN
 SELECT S.* 
@@ -12,8 +13,7 @@ WHERE C.ID_SALA IS NULL;
 SELECT * FROM CAD_SALAS
 WHERE ID_SALA NOT IN (SELECT ID_SALA FROM MOV_CURSOS);
 
-
--- 3. Apresentar todos os treinamentos para os quais n„o temos instrutor
+-- 3. Apresentar todos os treinamentos para os quais n√£o temos instrutor
 -- Com JOIN
 SELECT T.* 
 FROM CAD_TREINAMENTOS T 
@@ -24,7 +24,7 @@ SELECT * FROM CAD_TREINAMENTOS
 WHERE ID_TREINAMENTO NOT IN (SELECT ID_TREINAMENTO 
                              FROM CAD_INSTRUTORES_TREINAMENTOS);
                              
--- 4. Apresentar os alunos (CAD_PESSOAS) que n„o tem e nem tiveram 
+-- 4. Apresentar os alunos (CAD_PESSOAS) que n√£o tem e nem tiveram 
 --    nenhum curso agendado 
 -- Com JOIN
 SELECT P.*
@@ -36,7 +36,7 @@ SELECT * FROM CAD_PESSOAS
 WHERE ID_PESSOA NOT IN (SELECT ID_PESSOA_ALUNO FROM MOV_CURSOS_ALUNOS)
       AND SN_ALUNO = 'S'; 
 
--- 5. Apresentar os departamentos onde n„o existem funcion·rios cadastrados
+-- 5. Apresentar os departamentos onde n√£o existem funcion√°rios cadastrados
 -- Com JOIN
 SELECT D.*
 FROM CAD_DEPTOS D
@@ -46,7 +46,7 @@ WHERE F.ID_DEPTO IS NULL;
 SELECT * FROM CAD_DEPTOS
 WHERE ID_DEPTO NOT IN (SELECT ID_DEPTO FROM CAD_FUNCIONARIOS);
 
--- 6. Apresentar os cargos para os quais n„o existem funcion·rios cadastrados
+-- 6. Apresentar os cargos para os quais n√£o existem funcion√°rios cadastrados
 -- Com JOIN
 SELECT C.* 
 FROM CAD_CARGOS C LEFT JOIN CAD_FUNCIONARIOS F ON C.ID_CARGO = F.ID_CARGO
@@ -70,41 +70,41 @@ WHERE ID_MUNICIPIO IN (SELECT ID_MUNICIPIO FROM CAD_MUNICIPIOS
                                             WHERE ICMS < 7 ) );
 
 -- 8. Apresentar os dados do instrutor que possui o maior valor hora
--- SoluÁ„o 1
+-- Solu√ß√£o 1
 SELECT * FROM CAD_PESSOAS
 WHERE ID_PESSOA IN
 (
 SELECT ID_PESSOA_INSTR FROM CAD_INSTRUTORES_TREINAMENTOS
 WHERE VLR_HORA = (SELECT MAX(VLR_HORA) FROM CAD_INSTRUTORES_TREINAMENTOS)
 );
--- SoluÁ„o 2
+-- Solu√ß√£o 2
 SELECT TOP 1 ID_PESSOA, NOME, (SELECT TOP 1 VLR_HORA FROM CAD_INSTRUTORES_TREINAMENTOS
                  WHERE ID_PESSOA_INSTR = CAD_PESSOAS.ID_PESSOA
                  ORDER BY VLR_HORA DESC) AS VLR_HORA
 FROM CAD_PESSOAS
 WHERE SN_INSTRUTOR = 'S'
 ORDER BY 3 DESC;                        
--- SoluÁ„o 3
+-- Solu√ß√£o 3
 SELECT TOP 1 WITH TIES P.*, I.VLR_HORA
 FROM CAD_PESSOAS P JOIN CAD_INSTRUTORES_TREINAMENTOS I ON P.ID_PESSOA = I.ID_PESSOA_INSTR
 ORDER BY I.VLR_HORA DESC;
 
 -- 9. Apresentar os dados do instrutor que possui o MENOR valor hora
--- SoluÁ„o 1
+-- Solu√ß√£o 1
 SELECT * FROM CAD_PESSOAS
 WHERE ID_PESSOA IN
 (
 SELECT ID_PESSOA_INSTR FROM CAD_INSTRUTORES_TREINAMENTOS
 WHERE VLR_HORA = (SELECT MIN(VLR_HORA) FROM CAD_INSTRUTORES_TREINAMENTOS)
 );
--- SoluÁ„o 2
+-- Solu√ß√£o 2
 SELECT TOP 1 ID_PESSOA, NOME, (SELECT TOP 1 VLR_HORA FROM CAD_INSTRUTORES_TREINAMENTOS
                  WHERE ID_PESSOA_INSTR = CAD_PESSOAS.ID_PESSOA
                  ORDER BY VLR_HORA) AS VLR_HORA
 FROM CAD_PESSOAS
 WHERE SN_INSTRUTOR = 'S'
 ORDER BY 3;
--- SoluÁ„o 3
+-- Solu√ß√£o 3
 SELECT TOP 1 WITH TIES P.*, I.VLR_HORA
 FROM CAD_PESSOAS P JOIN CAD_INSTRUTORES_TREINAMENTOS I ON P.ID_PESSOA = I.ID_PESSOA_INSTR
 ORDER BY I.VLR_HORA;
