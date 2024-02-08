@@ -4,4 +4,6 @@
 -- Retornar os primeiros caracteres da esquerda
 -- LEFT(texto,n� de caracteres)
 
+-- Retornar os �ltimos caracteres da direita
+
 
