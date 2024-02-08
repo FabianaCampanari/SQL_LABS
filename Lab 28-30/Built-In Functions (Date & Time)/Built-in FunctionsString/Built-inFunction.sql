@@ -5,5 +5,8 @@
 -- LEFT(texto,n� de caracteres)
 
 -- Retornar os �ltimos caracteres da direita
+-- RIGHT(texto,n� de caracteres)
+
+
 
 
