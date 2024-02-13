@@ -1,5 +1,4 @@
 /*
-
 	NomeFun��o([Argumentos])
 
 	CAST(Valor Refer�ncia AS Tipo de Dado)
@@ -20,7 +19,6 @@
 	Format(Campo Data,'d','pt-br')
 	Format(Campo Data,'D','pt-br')
 	Format(Campo Data,'dd - mm - yyyy','pt-br')
-
 
 */
 
