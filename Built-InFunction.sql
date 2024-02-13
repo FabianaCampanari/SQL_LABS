@@ -12,7 +12,11 @@
 
 	FORMAT(Valor Refer�ncia,Formato,Cultura/Pa�s)
 
+        EX:
 
+	Format(Campo Monet�rio,'C','en-us')
+	Format(Campo Monet�rio,'C','pt-br')
 
+	
 */
 
