@@ -17,6 +17,10 @@
 	Format(Campo Monet�rio,'C','en-us')
 	Format(Campo Monet�rio,'C','pt-br')
 
-	
+	Format(Campo Data,'d','pt-br')
+	Format(Campo Data,'D','pt-br')
+	Format(Campo Data,'dd - mm - yyyy','pt-br')
+
+
 */
 
