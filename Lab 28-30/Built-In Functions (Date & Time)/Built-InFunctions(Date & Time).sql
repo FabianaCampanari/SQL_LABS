@@ -1,24 +1,32 @@
 /*
 
-	NomeFunï¿½ï¿½o([Argumentos])
+	NomeFunção([Argumentos])
 
 	GETDATE()
 
-	DAY(Data Referï¿½ncia)
+	DAY(Data Referência)
 
-	MONTH(Data Referï¿½ncia)
+	MONTH(Data Referência)
 
-	YEAR(Data Referï¿½ncia)
+	YEAR(Data Referência)
 
-	EMONTH(Data Referï¿½ncia,Quantidade de meses a adicionar)
+	EMONTH(Data Referência,Quantidade de meses a adicionar)
 
-        DATEFROMPARTS(Ano,Mï¿½s,Dia)
+	DATEFROMPARTS(Ano,Mês,Dia)
 
 	DATEDIFF(Parte Data,Data Inicial,Data Final)
 
-	DATEADD(Parte Data,valor a ser adicionado,Data Referï¿½ncia)
+	DATEADD(Parte Data,valor a ser adicionado,Data Referência)
 
-	DATENAME(Data Referï¿½ncia,Parte Data)
+	DATENAME(Data Referência,Parte Data)
 
-	
+	onde Parte Data poderá ser:
+
+		> YEAR		YYYY
+		> QUARTER	Q
+		> MONTH		M
+		> WEEK		WW
+		> DAY		D
+
+*/
 
