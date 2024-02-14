@@ -7,4 +7,6 @@
 -- Retornar os �ltimos caracteres da direita
 -- RIGHT(texto,n� de caracteres)
 
+-- Substituir um texto por outro
+-- REPLACE(texto,'valor anterior','novo valor')
 
