@@ -18,4 +18,15 @@
 
 	LTRIM(Texto Pesquisado)
 
+	UPPER(Texto Pesquisado)
+
+	LOWER(Texto Pesquisado)
+
+	REPLICATE(Texto a Repetir,Quantidade de Vezes)
+
+	REVERSE(Texto a ser Invertido)
 	
+	STRING_SPLIT(Texto a ser separado,Caractere delimitador)
+
+*/
+
