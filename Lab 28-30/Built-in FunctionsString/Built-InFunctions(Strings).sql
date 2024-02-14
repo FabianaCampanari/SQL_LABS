@@ -12,4 +12,10 @@
 
 	CHARINDEX(Texto Pesquisado,Texto Localizado,Posi��o Inicial)
 
+	SUBSTRING(Texto Pesquisado,Posi��o Inicial,N� de Caracteres)
+
+	RTRIM(Texto Pesquisado)
+
+	LTRIM(Texto Pesquisado)
+
 	
