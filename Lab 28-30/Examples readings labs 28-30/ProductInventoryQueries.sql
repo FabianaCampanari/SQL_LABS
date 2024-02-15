@@ -28,3 +28,7 @@ SELECT CODFUN AS Codigo, NOME AS Nome, SALARIO AS Salario,
        DATA_ADMISSAO AS "Data de Admiss�o"
 FROM TB_EMPREGADO;
 
+-- Campo calculado
+SELECT CODFUN AS Codigo, 
+       NOME AS Nome, 
+       
