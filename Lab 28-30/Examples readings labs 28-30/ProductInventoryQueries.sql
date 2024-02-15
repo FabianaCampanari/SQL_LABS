@@ -55,3 +55,6 @@ FROM TB_EMPREGADO
 ORDER BY Sal�rio; 
 
 -- Idem ao anterior
+SELECT CODFUN AS C�digo, 
+       NOME AS Nome, 
+       
