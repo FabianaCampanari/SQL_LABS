@@ -51,4 +51,6 @@ SELECT CODFUN AS C�digo,
        NOME AS Nome, 
        SALARIO AS Sal�rio,
        SALARIO * 1.10 [Sal�rio com 10% de aumento]
+FROM TB_EMPREGADO
+ORDER BY Sal�rio; 
 
