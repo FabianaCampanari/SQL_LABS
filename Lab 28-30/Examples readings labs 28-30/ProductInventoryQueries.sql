@@ -74,5 +74,4 @@ ORDER BY [Sal�rio com 10% de Aumento];
 SELECT CODFUN AS C�digo, 
        NOME AS Nome, 
        SALARIO AS Sal�rio,
-       
-      
+       SALARIO * 1.10 [Sal�rio com 10% de aumento]
