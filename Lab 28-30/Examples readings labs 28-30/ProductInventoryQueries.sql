@@ -31,4 +31,6 @@ FROM TB_EMPREGADO;
 -- Campo calculado
 SELECT CODFUN AS Codigo, 
        NOME AS Nome, 
-       
+SALARIO AS Salario,
+       SALARIO * 1.10 [Sal�rio com 10% de Aumento]
+     
