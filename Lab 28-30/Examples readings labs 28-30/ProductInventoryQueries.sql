@@ -62,3 +62,4 @@ SELECT CODFUN AS C�digo,
 FROM TB_EMPREGADO
 ORDER BY 3;
        
+-- Pela coluna SALARIO * 1.10
