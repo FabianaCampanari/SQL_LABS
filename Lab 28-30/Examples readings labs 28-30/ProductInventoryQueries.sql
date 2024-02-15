@@ -54,3 +54,4 @@ SELECT CODFUN AS C�digo,
 FROM TB_EMPREGADO
 ORDER BY Sal�rio; 
 
+-- Idem ao anterior
