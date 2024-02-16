@@ -135,3 +135,4 @@ ORDER BY DATA_ADMISSAO DESC;
 SELECT TOP 5 * FROM TB_EMPREGADO 
 ORDER BY SALARIO;
 
+-- Lista os 5 empregados que ganham mais
