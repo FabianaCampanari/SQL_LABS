@@ -104,4 +104,5 @@ ORDER BY COD_DEPTO, DATA_ADMISSAO;
 -- Continua valendo o uso do "alias" ou da posi��o da 
 -- coluna
 SELECT COD_DEPTO, NOME, DATA_ADMISSAO, SALARIO 
+FROM TB_EMPREGADO 
 
