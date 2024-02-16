@@ -132,5 +132,6 @@ SELECT TOP 5 * FROM TB_EMPREGADO
 ORDER BY DATA_ADMISSAO DESC;
 
 -- Lista os 5 empregados que ganham menos
+SELECT TOP 5 * FROM TB_EMPREGADO 
 
 
