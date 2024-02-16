@@ -122,3 +122,5 @@ ORDER BY COD_DEPTO DESC, SALARIO DESC;
 -- Lista os 5 primeiros empregados de acordo com a chave 
 -- prim�ria
 SELECT TOP 5 * FROM TB_EMPREGADO;
+
+-- Lista os 5 empregados mais antigos
