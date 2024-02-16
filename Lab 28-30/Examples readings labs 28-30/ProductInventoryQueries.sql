@@ -126,3 +126,5 @@ SELECT TOP 5 * FROM TB_EMPREGADO;
 -- Lista os 5 empregados mais antigos
 SELECT TOP 5 * FROM TB_EMPREGADO
 ORDER BY DATA_ADMISSAO;
+
+-- Lista os 5 empregados mais novos
