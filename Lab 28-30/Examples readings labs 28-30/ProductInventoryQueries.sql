@@ -149,3 +149,4 @@ FROM TB_EMPREGADO
 ORDER BY SALARIO DESC;
 
 -- Listar os 7 empregados que ganham mais, inclusive 
+-- aqueles empatados com o �ltimo
