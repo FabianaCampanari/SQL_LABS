@@ -147,3 +147,5 @@ ORDER BY SALARIO DESC;
 SELECT TOP 7 CODFUN, NOME, SALARIO 
 FROM TB_EMPREGADO 
 ORDER BY SALARIO DESC;
+
+-- Listar os 7 empregados que ganham mais, inclusive 
