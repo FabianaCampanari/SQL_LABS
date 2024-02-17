@@ -157,3 +157,6 @@ ORDER BY SALARIO DESC;
 -- aqueles empatados com o �ltimo
 SELECT TOP 7 WITH TIES CODFUN, NOME, SALARIO FROM TB_EMPREGADO 
 ORDER BY SALARIO DESC;
+
+--Mostrando os funcion�rios com SAL�RIO abaixo de 1000
+
