@@ -177,3 +177,5 @@ ORDER BY COD_DEPTO;
 SELECT * FROM TB_EMPREGADO
 WHERE COD_DEPTO = 2
 ORDER BY COD_DEPTO;
+
+--Mostrando os funcion�rios com campo COD_DEPTO diferente de 2
