@@ -174,4 +174,6 @@ WHERE COD_DEPTO <= 3
 ORDER BY COD_DEPTO;
 
 --Mostrando os funcion�rios com campo COD_DEPTO igual a 2
-
+SELECT * FROM TB_EMPREGADO
+WHERE COD_DEPTO = 2
+ORDER BY COD_DEPTO;
