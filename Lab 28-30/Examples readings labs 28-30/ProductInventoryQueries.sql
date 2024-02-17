@@ -169,3 +169,4 @@ WHERE SALARIO > 5000
 ORDER BY SALARIO;
 
 --Mostrando os funcion�rios com campo COD_DEPTO menor ou igual a 3
+SELECT * FROM TB_EMPREGADO 
