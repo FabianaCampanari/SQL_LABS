@@ -186,4 +186,5 @@ ORDER BY COD_DEPTO;
 --Mostrando os funcion�rios que tenham NOME alfabeticamente maior que RAQUEL
 SELECT CODFUN, NOME, SALARIO
 FROM TB_EMPREGADO
+WHERE NOME > 'RAQUEL'
 
