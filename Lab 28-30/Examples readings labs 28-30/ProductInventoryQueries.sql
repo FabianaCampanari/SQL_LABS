@@ -154,3 +154,4 @@ SELECT TOP 7 WITH TIES CODFUN, NOME, SALARIO FROM TB_EMPREGADO
 ORDER BY SALARIO DESC;
 
 -- Listar os 7 empregados que ganham mais, inclusive 
+-- aqueles empatados com o �ltimo
