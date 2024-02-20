@@ -217,3 +217,5 @@ ORDER BY SALARIO;
 -- who are not between 3000 and 5000 are outside this 
 -- range.
 SELECT * FROM TB_EMPREGADO
+WHERE NOT (SALARIO >= 3000 AND SALARIO <= 5000)
+ORDER BY SALARIO;
