@@ -350,3 +350,4 @@ FROM TB_EMPREGADO
 -- N�mero do dia correspondente � data de hoje
 SELECT DAY(GETDATE());
 
+-- Todos os funcion�rios admitidos no dia primeiro de 
