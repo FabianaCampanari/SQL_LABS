@@ -351,3 +351,4 @@ FROM TB_EMPREGADO
 SELECT DAY(GETDATE());
 
 -- Todos os funcion�rios admitidos no dia primeiro de 
+-- qualquer m�s e qualquer ano
