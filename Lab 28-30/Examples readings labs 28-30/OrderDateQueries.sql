@@ -13,3 +13,4 @@ WHERE YEAR( DATA_EMISSAO ) < 2014;
 /* 3. Listar todos os pedidos com data de
       emiss�o no primeiro semestre de 2014. */
 SELECT * FROM TB_PEDIDO
+WHERE DATA_EMISSAO BETWEEN '2014.1.1' AND '2014.6.30'
