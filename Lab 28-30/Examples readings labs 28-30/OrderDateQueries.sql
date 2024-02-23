@@ -5,3 +5,4 @@ USE PEDIDOS;
       emiss�o anterior a Jan/2014. */
 -- SOLU��O 1
 SELECT * FROM TB_PEDIDO
+WHERE DATA_EMISSAO < '2014.1.1';
