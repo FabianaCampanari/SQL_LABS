@@ -373,3 +373,5 @@ WHERE DATEPART(YEAR, DATA_ADMISSAO) = 1996 AND
       DATEPART(MONTH, DATA_ADMISSAO) = 12;
 
 - Funcion�rios admitidos em uma sexta-feira
+SELECT 
+  CODFUN, NOME, DATA_ADMISSAO, 
