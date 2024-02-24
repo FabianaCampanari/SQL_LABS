@@ -19,3 +19,4 @@ SELECT SUBSTRING ('Paralelepípedo',3,7);
 -- Concatena strings
 SELECT CONCAT ('SQL ','módulo ','I');
 
+-- Charindex
