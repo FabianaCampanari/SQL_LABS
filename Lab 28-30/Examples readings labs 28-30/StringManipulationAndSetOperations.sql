@@ -21,3 +21,6 @@ SELECT CONCAT ('SQL ','módulo ','I');
 
 -- Charindex
 SELECT CHARINDEX ('A' , 'CASA')
+
+-- Formata uma expressão
+
