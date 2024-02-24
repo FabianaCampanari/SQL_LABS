@@ -28,5 +28,4 @@ FROM tb_CLIENTE
 SELECT SUBSTRING(NOME, 1, CHARINDEX(' ' , NOME)) as Nome, 
 FORMAT( DATA_NASCIMENTO , 'dd/MM' ) AS [Anivers�rio]
 
---3
-SELECT NOME , 
+
