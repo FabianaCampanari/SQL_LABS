@@ -40,6 +40,7 @@ SELECT NOME, SALARIO, DATA_ADMISSAO,
             WHEN 3 THEN 'Ter�a-Feira'
             WHEN 4 THEN 'Quarta-Feira'
             WHEN 5 THEN 'Quinta-Feira'
-            
+            WHEN 6 THEN 'Sexta-Feira'
+           
        
 
