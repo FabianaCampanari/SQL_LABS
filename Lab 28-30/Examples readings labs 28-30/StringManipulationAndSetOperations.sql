@@ -5,5 +5,7 @@ USE PEDIDOS;
 SELECT LEN ('Brasil');
 
 -- Replica o texto 
+SELECT REPLICATE ('Teste',4);
+
 
 
