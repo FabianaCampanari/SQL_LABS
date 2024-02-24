@@ -42,6 +42,7 @@ SELECT NOME, SALARIO, DATA_ADMISSAO,
             WHEN 5 THEN 'Quinta-Feira'
             WHEN 6 THEN 'Sexta-Feira'
             WHEN 7 THEN 'S�bado'      
-       
+      END AS DIA_SEMANA       
+
        
 
