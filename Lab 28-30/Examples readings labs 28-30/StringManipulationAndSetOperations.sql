@@ -23,4 +23,5 @@ SELECT CONCAT ('SQL ','módulo ','I');
 SELECT CHARINDEX ('A' , 'CASA')
 
 -- Formata uma expressão
+SELECT FORMAT (GETDATE(), 'dd/MM/yyyy');
 
