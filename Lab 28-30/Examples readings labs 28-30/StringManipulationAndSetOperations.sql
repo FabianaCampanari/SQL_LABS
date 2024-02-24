@@ -25,3 +25,5 @@ SELECT CHARINDEX ('A' , 'CASA')
 -- Formata uma expressão
 SELECT FORMAT (GETDATE(), 'dd/MM/yyyy');
 
+SELECT NOME, SALARIO, CASE SINDICALIZADO
+                        
