@@ -8,3 +8,5 @@ SELECT LEN ('Brasil');
 SELECT REPLICATE ('Teste',4);
 
 -- Inverte o texto
+SELECT REVERSE ('amina');
+
