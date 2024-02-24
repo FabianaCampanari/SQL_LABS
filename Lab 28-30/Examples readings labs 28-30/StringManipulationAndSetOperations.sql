@@ -17,3 +17,5 @@ SELECT STR (213);
 SELECT SUBSTRING ('Paralelepípedo',3,7);
 
 -- Concatena strings
+SELECT CONCAT ('SQL ','módulo ','I');
+
