@@ -10,3 +10,5 @@ SELECT REPLICATE ('Teste',4);
 -- Inverte o texto
 SELECT REVERSE ('amina');
 
+-- Converte um número em texto
+
