@@ -38,3 +38,5 @@ WHERE DATA_EMISSAO BETWEEN '2014.1.1' AND '2014.1.31'
 /* 6. Listar os pedidos emitidos em Jan/2014
       em uma sexta-feira. */
 SELECT * FROM TB_PEDIDO
+WHERE DATA_EMISSAO BETWEEN '2014.1.1' AND '2014.1.31'
+     
