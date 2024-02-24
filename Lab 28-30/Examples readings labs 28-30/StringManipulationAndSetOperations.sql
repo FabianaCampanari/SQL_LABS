@@ -16,3 +16,4 @@ SELECT STR (213);
 -- Retorna uma parte do texto a partir de uma posição definida
 SELECT SUBSTRING ('Paralelepípedo',3,7);
 
+-- Concatena strings
