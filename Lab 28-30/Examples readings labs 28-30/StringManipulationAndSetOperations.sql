@@ -20,3 +20,4 @@ SELECT SUBSTRING ('Paralelepípedo',3,7);
 SELECT CONCAT ('SQL ','módulo ','I');
 
 -- Charindex
+SELECT CHARINDEX ('A' , 'CASA')
