@@ -13,3 +13,4 @@ SELECT REVERSE ('amina');
 -- Converte um número em texto
 SELECT STR (213);
 
+-- Retorna uma parte do texto a partir de uma posição definida
