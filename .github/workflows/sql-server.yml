@@ -1,0 +1,13 @@
+name: SQL Server Workflow
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v4
+
+    - name: Install Docker
+      run: |
+        brew install --cask docker
+        open /Applications/Docker.app
