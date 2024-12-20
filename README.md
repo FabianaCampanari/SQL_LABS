@@ -123,7 +123,7 @@ The SQL code below is an example related to a car dealership database. It includ
 
 <br>
 
-<p align="center"> [SQL Lab Certificate - Impact Technology University - 2023](https://github.com/FabianaCampanari/SQL_LABS/assets/113218619/6cc6c6ec-c3a0-45dc-baf8-1ea0f1ca58be)
+### <p align="center"> [SQL Lab Certificate - Impact Technology University - 2023](https://github.com/FabianaCampanari/SQL_LABS/assets/113218619/6cc6c6ec-c3a0-45dc-baf8-1ea0f1ca58be)
 
 
 #
