@@ -21,7 +21,7 @@ Here, you will find advanced techniques for the structure of a database system, 
 <br>
 
 
-#### <p align="center"> [SQL Lab Certificate ]https://github.com/FabianaCampanari/SQL_LABS/assets/113218619/6cc6c6ec-c3a0-45dc-baf8-1ea0f1ca58be) - (Impact Technology University - 2023)
+#### <p align="center"> [SQL Lab Certificate ](https://github.com/FabianaCampanari/SQL_LABS/assets/113218619/6cc6c6ec-c3a0-45dc-baf8-1ea0f1ca58be) - (Impact Technology University - 2023)
 
 <br>
 
