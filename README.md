@@ -6,6 +6,8 @@
 
 Here, you will find advanced techniques for the structure of a database system, as well as the mechanism and structure of SQL  and other essential points to use the various features of SQL Server and its data query and manipulation structure.
 
+<br>
+
 
  #### <p align="center"> ***< made with vibe, frequency & joy />*** 🪬</p> 
 
@@ -15,6 +17,11 @@ Here, you will find advanced techniques for the structure of a database system, 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/13c12c79-bb56-428c-a620-b85fb8f4cdb0"/>
 
+
+<br>
+
+
+#### <p align="center"> [SQL Lab Certificate ]https://github.com/FabianaCampanari/SQL_LABS/assets/113218619/6cc6c6ec-c3a0-45dc-baf8-1ea0f1ca58be) - (Impact Technology University - 2023)
 
 <br>
 
@@ -116,15 +123,6 @@ The SQL code below is an example related to a car dealership database. It includ
 
 <p align="center">
 <img src="https://github.com/FabianaCampanari/SQL_LABS/assets/113218619/069f2147-992e-4183-b997-c23d41530dda"/>
-
-
-
-## SQL Certificate
-
-<br>
-
-### <p align="center"> [SQL Lab Certificate - Impact Technology University - 2023](https://github.com/FabianaCampanari/SQL_LABS/assets/113218619/6cc6c6ec-c3a0-45dc-baf8-1ea0f1ca58be)
-
 
 #
 
