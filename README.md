@@ -8,6 +8,16 @@ Here, you will find advanced techniques for the structure of a database system, 
 
 <br>
 
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/13c12c79-bb56-428c-a620-b85fb8f4cdb0"/>
+
+
+
+
+
+
+
  #### <p align="center"> ***< made with vibe, frequency & joy />*** 🪬</p> 
 
 <br>
