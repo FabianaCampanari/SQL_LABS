@@ -1,12 +1,14 @@
 cff-version: 1.2.0
-title: Fabiana Campanari repository
+title: No-SQL
+orgabization: Mindful-AI-Assistants
+contact me: https://linktr.ee/fabianacampanari
 message: If you really want to cite this repository, here's how you should cite it.
 type: software
 authors:
   - given-names: Fabiana
-    family-names: Campanari
-    orcid: https://orcid.org/1234-5678-9101-1121
-repository-code: https://github.com/FabianaCampanari/SQL_LABS
-license: Apache-2.0 license
+    family-names: Rotella Campanari
+repository-code: https://github.com/Mindful-AI-Assistants/No-SQL
+license: MIT license
+
 
 
