@@ -1,4 +1,0 @@
-
-              - name: Honeycomb Buildevents
-                uses: honeycombio/gha-buildevents@v2.3.0
-            
