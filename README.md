@@ -14,8 +14,7 @@ Here, you will find advanced techniques for the structure of a database system, 
 <br>
 
 
-<p align="center">
-<img src="https://github.com/user-attachments/assets/13c12c79-bb56-428c-a620-b85fb8f4cdb0"/>
+### <p align="center"> <img width="485" alt="Automation Workflow" src="https://github.com/user-attachments/assets/a7dd082d-33e9-41df-b5e7-cc3dd359a9b7" />
 
 
 <br>
